@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz interactif - Réseau informatique</title>
+  <style>
+    :root{
+      --bg1:#e0f2fe;
+      --bg2:#eef2ff;
+      --bg3:#f5d0fe;
+      --blue:#2563eb;
+      --cyan:#06b6d4;
+      --pink:#d946ef;
+      --green:#16a34a;
+      --red:#dc2626;
+      --text:#1e293b;
+      --muted:#64748b;
+      --card:rgba(255,255,255,.88);
+      --border:#e2e8f0;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+      min-height:100vh;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:24px}
+    .card{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.8);
+      border-radius:28px;
+      overflow:hidden;
+      box-shadow:0 20px 60px rgba(15,23,42,.15);
+      backdrop-filter: blur(8px);
+    }
+    .hero{
+      color:#fff;
+      padding:28px;
+      background:linear-gradient(90deg,var(--blue),var(--cyan),var(--pink));
+    }
+    h1{margin:0 0 8px;font-size:clamp(28px,4vw,42px)}
+    .sub{opacity:.95;line-height:1.5}
+    .topbar{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;margin-top:16px}
+    .badge{
+      background:rgba(255,255,255,.18);
+      padding:10px 14px;
+      border-radius:16px;
+      font-weight:700;
+    }
+    .content{padding:28px}
+    .progress{
+      height:12px;background:#dbeafe;border-radius:999px;overflow:hidden;margin-bottom:26px
+    }
+    .progress > div{
+      height:100%;
+      width:0;
+      background:linear-gradient(90deg,var(--blue),var(--cyan));
+      transition:width .35s ease;
+    }
+    .question{font-size:30px;font-weight:800;margin-bottom:20px}
+    .option{
+      width:100%;
+      text-align:left;
+      padding:16px 18px;
+      margin:10px 0;
+      border-radius:18px;
+      border:1px solid var(--border);
+      background:#fff;
+      cursor:pointer;
+      font-size:17px;
+      transition:.18s ease;
+      box-shadow:0 4px 14px rgba(15,23,42,.06);
+    }
+    .option:hover{transform:translateY(-1px);border-color:#7dd3fc;background:#f0f9ff}
+    .option.selected{background:#eff6ff;border-color:#3b82f6}
+    .option.correct{background:#dcfce7;border-color:#4ade80}
+    .option.wrong{background:#fee2e2;border-color:#f87171}
+    .feedback{
+      margin-top:22px;
+      padding:18px;
+      background:#eff6ff;
+      border:1px solid #bfdbfe;
+      border-radius:20px;
+      line-height:1.65;
+    }
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    button.primary, button.secondary{
+      border:none;border-radius:18px;padding:14px 18px;font-weight:800;font-size:16px;cursor:pointer
+    }
+    button.primary{
+      color:#fff;background:linear-gradient(90deg,var(--blue),var(--cyan));
+      box-shadow:0 10px 24px rgba(37,99,235,.28);
+    }
+    button.secondary{
+      background:#fff;border:1px solid var(--border);color:var(--text)
+    }
+    button:disabled{opacity:.5;cursor:not-allowed}
+    .match-row{
+      background:#fff;border:1px solid var(--border);border-radius:18px;padding:16px;margin:12px 0;
+      box-shadow:0 4px 14px rgba(15,23,42,.06);
+    }
+    .match-row.correct{background:#dcfce7;border-color:#4ade80}
+    .match-row.wrong{background:#fee2e2;border-color:#f87171}
+    select{
+      width:100%;padding:12px;border-radius:12px;border:1px solid #cbd5e1;font-size:15px;margin-top:10px
+    }
+    .final{text-align:center;padding:36px}
+    .emoji{font-size:56px;margin-bottom:12px}
+    .score{font-size:24px;margin:10px 0 18px}
+    .boxgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px 0 28px}
+    .box{background:#fff;border:1px solid var(--border);border-radius:20px;padding:16px;text-align:left}
+    .small{font-size:14px;color:var(--muted)}
+    @media (max-width:700px){
+      .wrap{padding:14px}
+      .content,.hero{padding:18px}
+      .question{font-size:23px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" id="app"></div>
+  </div>
+
+  <script>
+    const questions = [
+      {
+        type: "mcq",
+        question: "1) Qu’est-ce qu’un réseau informatique ?",
+        options: [
+          "Un ensemble d’ordinateurs et d’appareils reliés entre eux pour échanger des informations",
+          "Un logiciel pour dessiner des images",
+          "Un appareil qui sert uniquement à imprimer",
+          "Un câble électrique pour alimenter un ordinateur"
+        ],
+        answer: 0,
+        explanation: "Un réseau informatique permet à plusieurs appareils de communiquer et de partager des données."
+      },
+      {
+        type: "truefalse",
+        question: "2) Vrai ou faux : Internet est un réseau mondial qui relie des millions d’appareils.",
+        options: ["Vrai", "Faux"],
+        answer: 0,
+        explanation: "C’est vrai. Internet connecte des appareils du monde entier pour échanger des informations."
+      },
+      {
+        type: "mcq",
+        question: "3) Quel appareil permet souvent de connecter plusieurs appareils à Internet à la maison ?",
+        options: ["Le routeur", "Le clavier", "L’écran", "La souris"],
+        answer: 0,
+        explanation: "Le routeur permet de relier les appareils entre eux et de leur donner accès à Internet."
+      },
+      {
+        type: "match",
+        question: "4) Associe chaque élément à son rôle.",
+        pairs: [
+          { left: "Navigateur web", right: "Ouvrir des sites Internet" },
+          { left: "Routeur", right: "Distribuer la connexion" },
+          { left: "Câble réseau", right: "Relier physiquement des appareils" }
+        ],
+        explanation: "Chaque élément du réseau a un rôle précis : naviguer, connecter ou transmettre les données."
+      },
+      {
+        type: "mcq",
+        question: "5) Que signifie Wi-Fi ?",
+        options: [
+          "Une connexion sans fil",
+          "Un type d’écran tactile",
+          "Un antivirus",
+          "Un câble réseau spécial"
+        ],
+        answer: 0,
+        explanation: "Le Wi-Fi permet de connecter des appareils à un réseau sans utiliser de câble."
+      },
+      {
+        type: "truefalse",
+        question: "6) Vrai ou faux : Une adresse IP sert à identifier un appareil sur un réseau.",
+        options: ["Vrai", "Faux"],
+        answer: 0,
+        explanation: "C’est vrai. L’adresse IP est comme une adresse qui permet de reconnaître un appareil sur le réseau."
+      },
+      {
+        type: "mcq",
+        question: "7) Parmi ces propositions, laquelle est un exemple d’appareil connecté à un réseau ?",
+        options: ["Ordinateur", "Tablette", "Smartphone", "Les trois réponses"],
+        answer: 3,
+        explanation: "Tous ces appareils peuvent être connectés à un réseau informatique."
+      },
+      {
+        type: "match",
+        question: "8) Fais correspondre le mot et sa définition.",
+        pairs: [
+          { left: "Internet", right: "Réseau mondial" },
+          { left: "Mot de passe", right: "Protège l’accès" },
+          { left: "Téléchargement", right: "Recevoir un fichier" }
+        ],
+        explanation: "Bien connaître ces mots aide à mieux comprendre l’utilisation d’un réseau informatique."
+      },
+      {
+        type: "truefalse",
+        question: "9) Vrai ou faux : Il est conseillé de partager son mot de passe avec tout le monde.",
+        options: ["Vrai", "Faux"],
+        answer: 1,
+        explanation: "C’est faux. Un mot de passe doit rester secret pour protéger les comptes et les appareils."
+      },
+      {
+        type: "mcq",
+        question: "10) Quel est le principal avantage d’un réseau informatique dans une école ?",
+        options: [
+          "Partager des ressources et des informations rapidement",
+          "Faire fonctionner les ordinateurs sans électricité",
+          "Empêcher les élèves d’utiliser les logiciels",
+          "Remplacer tous les cahiers automatiquement"
+        ],
+        answer: 0,
+        explanation: "Un réseau permet de partager facilement des fichiers, des imprimantes et des informations."
+      }
+    ];
+
+    let current = 0;
+    let score = 0;
+    let selected = null;
+    let checked = false;
+    let matchAnswers = {};
+    let matchChecked = false;
+
+    function encouragement() {
+      if (score === 10) return "Excellent ! Tu maîtrises très bien les bases du réseau informatique. 🌟";
+      if (score >= 8) return "Très bon travail ! Tu as très bien compris l’essentiel. 👏";
+      if (score >= 5) return "Bravo ! Tu progresses bien, continue à t’entraîner. 👍";
+      return "Bon début ! Avec un peu de révision, tu vas encore progresser. 💪";
+    }
+
+    function levelText() {
+      if (score >= 8) return "Très bon niveau";
+      if (score >= 5) return "Bon niveau";
+      return "À renforcer";
+    }
+
+    function render() {
+      const app = document.getElementById("app");
+      if (current >= questions.length) {
+        app.innerHTML = `
+          <div class="final">
+            <div class="emoji">🎓</div>
+            <h1>Quiz terminé !</h1>
+            <div class="score">Ton score final est de <strong>${score} / 10</strong></div>
+            <div class="feedback" style="max-width:760px;margin:0 auto 22px;">${encouragement()}</div>
+            <div class="boxgrid">
+              <div class="box">
+                <div class="small">Niveau atteint</div>
+                <div style="font-size:22px;font-weight:800;margin-top:6px;">${levelText()}</div>
+              </div>
+              <div class="box">
+                <div class="small">Conseil</div>
+                <div style="font-size:22px;font-weight:800;margin-top:6px;">Révise : Wi‑Fi, routeur, IP, sécurité</div>
+              </div>
+            </div>
+            <button class="primary" onclick="restartQuiz()">Recommencer le quiz</button>
+          </div>
+        `;
+        return;
+      }
+
+      const q = questions[current];
+      const progress = ((current + 1) / questions.length) * 100;
+
+      let body = `
+        <div class="hero">
+          <h1>Quiz interactif : Les bases du réseau informatique</h1>
+          <div class="sub">Niveau : 2e année collège • Réponds question par question et découvre la correction tout de suite.</div>
+          <div class="topbar">
+            <div class="badge">Question <strong>${current + 1}</strong> / ${questions.length}</div>
+            <div class="badge">Score : <strong>${score}</strong></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="progress"><div style="width:${progress}%"></div></div>
+          <div class="question">${q.question}</div>
+      `;
+
+      if (q.type === "match") {
+        const choices = q.pairs.map(p => p.right);
+        q.pairs.forEach((pair, i) => {
+          const rowClass = matchChecked
+            ? (matchAnswers[i] === pair.right ? "match-row correct" : "match-row wrong")
+            : "match-row";
+          body += `
+            <div class="${rowClass}">
+              <div style="font-weight:800;">${pair.left}</div>
+              <select ${matchChecked ? "disabled" : ""} onchange="setMatch(${i}, this.value)">
+                <option value="">Choisir une réponse</option>
+                ${choices.map(opt => `<option value="${opt.replace(/"/g,'&quot;')}" ${matchAnswers[i] === opt ? "selected" : ""}>${opt}</option>`).join("")}
+              </select>
+              ${matchChecked ? `<div style="margin-top:10px;font-size:14px;"><strong>Bonne réponse :</strong> ${pair.right}</div>` : ""}
+            </div>
+          `;
+        });
+      } else {
+        q.options.forEach((opt, i) => {
+          let cls = "option";
+          if (selected === i) cls += " selected";
+          if (checked && i === q.answer) cls += " correct";
+          if (checked && selected === i && i !== q.answer) cls += " wrong";
+          body += `<button class="${cls}" ${checked ? "disabled" : ""} onclick="choose(${i})"><strong>${String.fromCharCode(65+i)}.</strong> ${opt}</button>`;
+        });
+      }
+
+      const showFeedback = (checked && q.type !== "match") || (matchChecked && q.type === "match");
+      if (showFeedback) {
+        const title = q.type === "match"
+          ? (q.pairs.every((p, i) => matchAnswers[i] === p.right) ? "✅ Très bien !" : "📝 Correction")
+          : (selected === q.answer ? "✅ Bonne réponse !" : "❌ Ce n’est pas la bonne réponse.");
+        body += `<div class="feedback"><div style="font-weight:800;font-size:20px;margin-bottom:8px;">${title}</div>${q.explanation}</div>`;
+      }
+
+      body += `<div class="actions">`;
+      if (q.type === "match" && !matchChecked) {
+        body += `<button class="primary" onclick="checkAnswer()">Vérifier mes associations</button>`;
+      }
+      if (q.type !== "match" && !checked) {
+        body += `<button class="primary" onclick="checkAnswer()" ${selected === null ? "disabled" : ""}>Vérifier ma réponse</button>`;
+      }
+      if (showFeedback) {
+        body += `<button class="secondary" onclick="nextQuestion()">${current === questions.length - 1 ? "Voir mon score final" : "Question suivante"}</button>`;
+      }
+      body += `</div></div>`;
+      app.innerHTML = body;
+    }
+
+    function choose(i){ selected = i; render(); }
+    function setMatch(i, value){ matchAnswers[i] = value; }
+    function checkAnswer() {
+      const q = questions[current];
+      if (q.type === "match") {
+        const allAnswered = q.pairs.every((_, i) => matchAnswers[i]);
+        if (!allAnswered) return alert("Choisis une réponse pour chaque élément.");
+        const ok = q.pairs.every((p, i) => matchAnswers[i] === p.right);
+        if (ok) score++;
+        matchChecked = true;
+      } else {
+        if (selected === null) return;
+        if (selected === q.answer) score++;
+        checked = true;
+      }
+      render();
+    }
+    function nextQuestion() {
+      current++;
+      selected = null;
+      checked = false;
+      matchAnswers = {};
+      matchChecked = false;
+      render();
+    }
+    function restartQuiz() {
+      current = 0;
+      score = 0;
+      selected = null;
+      checked = false;
+      matchAnswers = {};
+      matchChecked = false;
+      render();
+    }
+
+    render();
+  </script>
+</body>
+</html>

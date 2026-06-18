@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profil | Portfolio CRMEF — Ouijdane Louchachha</title>
+  <meta name="description" content="Profil professionnel d'Ouijdane Louchachha — Développeuse web et enseignante stagiaire en informatique au CRMEF Marrakech-Safi.">
+  <meta property="og:title" content="Profil — Portfolio CRMEF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>●</text></svg>">
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <span class="brand-icon">●</span>
+        <span class="brand-text">Ouijdane<span class="dot">.</span>Portfolio</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="mainNav" role="navigation" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="profile.html" class="nav-link active">Profil</a>
+        <div class="drop">
+          <span class="dropbtn nav-link">Formation <i class="fa-solid fa-chevron-down"></i></span>
+          <div class="dropdown">
+            <a href="semester1/index.html" class="dropdown-link">Semestre 1</a>
+            <a href="semester2/index.html" class="dropdown-link">Semestre 2</a>
+          </div>
+        </div>
+        <a href="smp.html" class="nav-link">SMP</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button id="themeToggle" class="btn-theme" type="button" aria-label="Changer le thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO PROFIL ===== -->
+    <section class="module-hero">
+      <div class="container" data-aos="fade-up">
+        <span class="badge"><i class="fa-solid fa-user"></i> Profil professionnel</span>
+        <h1>Ouijdane Louchachha</h1>
+        <p>Développeuse web en reconversion vers l'enseignement de l'informatique</p>
+        <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+          <span style="font-size:.85rem;color:var(--text-light)"><i class="fa-solid fa-school"></i> CRMEF Ibn Rochd Marrakech-Safi</span>
+          <span style="font-size:.85rem;color:var(--text-light)"><i class="fa-solid fa-calendar"></i> Promotion 2025-2026</span>
+        </div>
+        <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+          <a href="#presentation" class="btn btn-primary">Voir mon parcours</a>
+          <a href="#competences" class="btn btn-outline">Découvrir mes compétences</a>
+          <a href="#projet" class="btn btn-outline">Mon projet professionnel</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRÉSENTATION PROFESSIONNELLE ===== -->
+    <section id="presentation" class="section-block" style="padding-top:0">
+      <div class="container">
+        <div class="bento-grid bento-grid-2" data-aos="fade-up">
+          <div class="glass-card">
+            <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:16px">Présentation</h2>
+            <p style="color:var(--text-light);line-height:1.8">
+              Développeuse web de formation, j'ai progressivement orienté mon parcours vers l'enseignement de l'informatique afin de mettre mes compétences numériques au service des apprentissages. Mon passage par le CRMEF représente une étape importante dans la construction de mon identité professionnelle, en m'aidant à transformer une expertise technique en compétences pédagogiques, didactiques et réflexives.
+            </p>
+          </div>
+          <div class="glass-card">
+            <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:16px">Carte d'identité</h2>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;align-items:center;gap:12px">
+                <div style="width:40px;height:40px;border-radius:10px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent)"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div><span style="font-size:.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">Filière</span><br><span style="font-weight:600">Enseignement secondaire collégial – Informatique</span></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px">
+                <div style="width:40px;height:40px;border-radius:10px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent)"><i class="fa-solid fa-school"></i></div>
+                <div><span style="font-size:.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">Centre</span><br><span style="font-weight:600">CRMEF Ibn Rochd Marrakech-Safi</span></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px">
+                <div style="width:40px;height:40px;border-radius:10px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent)"><i class="fa-solid fa-building"></i></div>
+                <div><span style="font-size:.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">Établissement de stage</span><br><span style="font-weight:600">Collège Al Nakhil</span></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px">
+                <div style="width:40px;height:40px;border-radius:10px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent)"><i class="fa-solid fa-calendar"></i></div>
+                <div><span style="font-size:.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">Promotion</span><br><span style="font-weight:600">2025-2026</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MON PARCOURS EN TROIS DIMENSIONS ===== -->
+    <section class="section-block section-alt">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="section-label">Parcours</span>
+          <h2 class="section-title">Mon parcours en trois dimensions</h2>
+        </div>
+        <div class="bento-grid bento-grid-3" style="margin-top:40px" data-aos="fade-up">
+          <div class="glass-card">
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#2E5BBA,#1A2B49);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;margin-bottom:16px"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3 style="font-weight:700;margin-bottom:12px">Parcours académique</h3>
+            <ul style="color:var(--text-light);font-size:.9rem;list-style:none;padding:0;display:flex;flex-direction:column;gap:10px">
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Baccalauréat Sciences Mathématiques A</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>DUT Génie Informatique</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Licence Professionnelle SIGL</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Formation CRMEF</li>
+            </ul>
+          </div>
+          <div class="glass-card">
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#4DA3FF,#2E5BBA);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;margin-bottom:16px"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3 style="font-weight:700;margin-bottom:12px">Parcours professionnel</h3>
+            <ul style="color:var(--text-light);font-size:.9rem;list-style:none;padding:0;display:flex;flex-direction:column;gap:10px">
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Développeuse web</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Développeuse WordPress</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Cheffe de projet digital</li>
+            </ul>
+          </div>
+          <div class="glass-card">
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#4DA3FF,#1A2B49);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;margin-bottom:16px"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3 style="font-weight:700;margin-bottom:12px">Formation enseignante</h3>
+            <ul style="color:var(--text-light);font-size:.9rem;list-style:none;padding:0;display:flex;flex-direction:column;gap:10px">
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Modules CRMEF</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Stage SMP</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Analyse des pratiques</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Productions pédagogiques</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES PRINCIPALES ===== -->
+    <section id="competences" class="section-block">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="section-label">Compétences</span>
+          <h2 class="section-title">Compétences principales</h2>
+        </div>
+        <div class="bento-grid bento-grid-3" style="margin-top:40px" data-aos="fade-up">
+          <div class="glass-card">
+            <div style="width:48px;height:48px;border-radius:12px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.2rem;margin-bottom:16px"><i class="fa-solid fa-code"></i></div>
+            <h3 style="font-weight:700;margin-bottom:12px">Compétences techniques</h3>
+            <ul style="color:var(--text-light);font-size:.9rem;list-style:none;padding:0;display:flex;flex-direction:column;gap:10px">
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Développement Web (HTML, CSS, PHP)</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>WordPress & CMS</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Python & Algorithmique</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Réseaux & Architecture</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Bureautique (Excel, Word)</li>
+            </ul>
+          </div>
+          <div class="glass-card">
+            <div style="width:48px;height:48px;border-radius:12px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.2rem;margin-bottom:16px"><i class="fa-solid fa-chalkboard"></i></div>
+            <h3 style="font-weight:700;margin-bottom:12px">Compétences pédagogiques</h3>
+            <ul style="color:var(--text-light);font-size:.9rem;list-style:none;padding:0;display:flex;flex-direction:column;gap:10px">
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Planification pédagogique</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Gestion de classe</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Didactique de l'informatique</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Évaluation des apprentissages</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Intégration des TICE</li>
+            </ul>
+          </div>
+          <div class="glass-card">
+            <div style="width:48px;height:48px;border-radius:12px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.2rem;margin-bottom:16px"><i class="fa-solid fa-brain"></i></div>
+            <h3 style="font-weight:700;margin-bottom:12px">Compétences réflexives</h3>
+            <ul style="color:var(--text-light);font-size:.9rem;list-style:none;padding:0;display:flex;flex-direction:column;gap:10px">
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Analyse des pratiques</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Adaptation continue</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Amélioration des pratiques</li>
+              <li style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>Recherche-action</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POURQUOI L'ENSEIGNEMENT ===== -->
+    <section class="section-block section-alt">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="section-label">Motivation</span>
+          <h2 class="section-title">Pourquoi l'enseignement ?</h2>
+        </div>
+        <div class="glass-card" style="margin-top:32px;max-width:800px;margin-left:auto;margin-right:auto" data-aos="fade-up">
+          <p style="color:var(--text-light);line-height:1.8;font-size:.95rem">
+            Mon choix de m'orienter vers l'enseignement de l'informatique s'inscrit dans la continuité de mon parcours numérique. Après plusieurs expériences dans le développement web, j'ai compris que la maîtrise des outils informatiques prend tout son sens lorsqu'elle devient un moyen d'accompagner, de transmettre et de faire progresser les apprenants.
+          </p>
+          <p style="color:var(--text-light);line-height:1.8;font-size:.95rem;margin-top:16px">
+            Enseigner l'informatique représente pour moi l'occasion de contribuer à la construction d'une culture numérique responsable, tout en aidant les élèves à développer la logique, l'autonomie, la créativité et la capacité à résoudre des problèmes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MES ATOUTS ET MON PROJET PROFESSIONNEL ===== -->
+    <section id="projet" class="section-block">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="section-label">Atouts & Projet</span>
+          <h2 class="section-title">Mes atouts et mon projet professionnel</h2>
+        </div>
+        <div class="bento-grid bento-grid-2" style="margin-top:40px" data-aos="fade-up">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div class="glass-card" style="text-align:center;padding:24px 16px">
+              <div style="width:48px;height:48px;border-radius:12px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.2rem;margin:0 auto 12px"><i class="fa-solid fa-ruler-combined"></i></div>
+              <h3 style="font-weight:700;font-size:.95rem;margin-bottom:6px">Rigueur</h3>
+              <p style="color:var(--text-light);font-size:.82rem">Discipline de travail acquise dans le développement web et la planification.</p>
+            </div>
+            <div class="glass-card" style="text-align:center;padding:24px 16px">
+              <div style="width:48px;height:48px;border-radius:12px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.2rem;margin:0 auto 12px"><i class="fa-solid fa-arrows-spin"></i></div>
+              <h3 style="font-weight:700;font-size:.95rem;margin-bottom:6px">Adaptabilité</h3>
+              <p style="color:var(--text-light);font-size:.82rem">Capacité à évoluer entre développement web et enseignement.</p>
+            </div>
+            <div class="glass-card" style="text-align:center;padding:24px 16px">
+              <div style="width:48px;height:48px;border-radius:12px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.2rem;margin:0 auto 12px"><i class="fa-solid fa-hand-holding-heart"></i></div>
+              <h3 style="font-weight:700;font-size:.95rem;margin-bottom:6px">Sens de l'écoute</h3>
+              <p style="color:var(--text-light);font-size:.82rem">Écoute attentive des besoins des élèves et des apprenants.</p>
+            </div>
+            <div class="glass-card" style="text-align:center;padding:24px 16px">
+              <div style="width:48px;height:48px;border-radius:12px;background:rgba(77,163,255,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.2rem;margin:0 auto 12px"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h3 style="font-weight:700;font-size:.95rem;margin-bottom:6px">Apprentissage continu</h3>
+              <p style="color:var(--text-light);font-size:.82rem">Veille technologique et formation permanente.</p>
+            </div>
+          </div>
+          <div class="glass-card">
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#2E5BBA,#1A2B49);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;margin-bottom:16px"><i class="fa-solid fa-rocket"></i></div>
+            <h3 style="font-weight:700;margin-bottom:12px">Mon projet professionnel</h3>
+            <p style="color:var(--text-light);line-height:1.8;font-size:.9rem">
+              Mon projet professionnel est de devenir une enseignante d'informatique capable de proposer des situations d'apprentissage claires, motivantes et adaptées au niveau des élèves. Je souhaite construire une pratique fondée sur la maîtrise disciplinaire, l'intégration raisonnée du numérique, la gestion positive de la classe et l'analyse continue de mes pratiques.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-icon">●</span>
+          <h3>Ouijdane<span class="dot">.</span>Portfolio</h3>
+          <p>Enseignante Stagiaire en Informatique<br>CRMEF Ibn Rochd Marrakech-Safi</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="index.html">Accueil</a>
+          <a href="profile.html">Profil</a>
+          <a href="formation.html">Formation</a>
+          <a href="smp.html">SMP</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-modules">
+          <h4>Formation</h4>
+          <a href="semester1/index.html">Semestre 1</a>
+          <a href="semester2/index.html">Semestre 2</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <a href="mailto:louchachhaouijdane@gmail.com"><i class="fa-solid fa-envelope"></i> louchachhaouijdane@gmail.com</a>
+          <a href="tel:+212641031153"><i class="fa-solid fa-phone"></i> +212 641031153</a>
+          <a href="https://ouijdane.net" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> ouijdane.net</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ouijdane Louchachha — Portfolio Professionnel CRMEF</p>
+        <p class="footer-tagline">Former les citoyens numériques de demain</p>
+      </div>
+    </div>
+  </footer>
+  <div class="backtop" id="backTop" aria-label="Retour en haut">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

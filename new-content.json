@@ -1,0 +1,104 @@
+{
+  "smp": {
+    "heroDesc": "Quatre phases d'immersion progressive au sein de l'Établissement collégial Al Nakhil — de l'observation silencieuse à l'analyse réflexive de mes propres pratiques, ce stage a cristallisé ma vision du métier d'enseignante en informatique.",
+    "presentation": "Le stage en milieu professionnel (SMP) au Collégial Al Nakhil a constitué le point culminant de ma formation au CRMEF : le moment où les théories croisées en didactique, en sciences de l'éducation et en gestion de classe devaient s'incarner devant de vrais élèves. Dès le premier jour, le décalage entre ce que j'avais imaginé et la réalité de la salle de classe m'a frappée — le bruit, les regards méfiants, la nécessité de capter l'attention sur des concepts abstraits comme l'algorithmique. J'ai découvert que l'enseignement ne se réduit pas à une transmission de savoirs : c'est un métier d'adaptation permanente, de négociation silencieuse avec trente personnalités différentes. Ce stage m'a confrontée à mes propres limites — la gestion du stress, la clarté des consignes, la capacité à rebondir quand une activité ne fonctionne pas — et m'a offert l'espace pour les dépasser. Il a transformé ma représentation du métier : je n'enseignerai pas « à des élèves », mais « à chaque élève ».",
+    "phases": [
+      {
+        "emoji": "👁️",
+        "color": "#64748B",
+        "phase": "Phase 1",
+        "title": "Observation",
+        "description": "Assise au fond de la classe pendant les premières séances, j'étais partagée entre l'enthousiasme d'être enfin sur le terrain et une appréhension diffuse : comment allais-je moi-même tenir cette position ? J'ai observé la manière dont le professeur titulaire ouvrait chaque séance par un rituel silencieux — les élèves s'installaient, les cahiers sortaient dans un ordre presque chorégraphié. J'ai noté ses relances, ses reformulations, la façon dont il désamorçait les conflits naissants d'un simple regard. Mais ce qui m'a le plus marquée, c'est l'écart entre la planification écrite et la réalité : une activité préparée pour vingt minutes pouvait s'effondrer en cinq parce que les consignes n'avaient pas été comprises. J'ai compris que l'enseignant improvise en permanence, et que cette improvisation repose sur une connaissance fine de ses élèves. Cette phase d'observation silencieuse a posé les bases de ma future pratique : elle m'a appris à lire une classe avant d'espérer y enseigner."
+      },
+      {
+        "emoji": "🤝",
+        "color": "#2E5BBA",
+        "phase": "Phase 2",
+        "title": "Co-animation",
+        "description": "Le passage en co-animation s'est fait naturellement : le professeur m'a confié la correction d'un exercice sur les opérateurs logiques pendant qu'il circulait entre les rangées. Mon cœur battait fort en montant à l'estrade, et ma voix a tremblé sur les premiers mots. Pourtant, une fois lancée, j'ai retrouvé les réflexes de ma vie d'avant — la pédagogie de projet que j'utilisais en conception web s'appliquait aussi ici : décomposer un problème complexe en étapes simples. J'ai préparé une fiche d'exercices sur la conversion binaire, et j'ai été surprise par la facilité avec laquelle certains élèves manipulaient les concepts quand on les présentait sous forme de jeu. D'autres, en revanche, décrochaient complètement, et je ne savais pas encore comment les rattraper. Co-animer m'a appris que l'enseignement est un équilibre fragile entre ceux qui avancent vite et ceux qui ont besoin de plus de temps — un équilibre que je devais apprendre à ajuster en temps réel."
+      },
+      {
+        "emoji": "👩‍🏫",
+        "color": "#4DA3FF",
+        "phase": "Phase 3",
+        "title": "Animation autonome",
+        "description": "Ma première séance en autonomie portait sur la notion d'algorithme et les instructions conditionnelles. J'avais préparé un diaporama, des exercices progressifs et même une activité débranchée avec des cartes colorées. Rien ne s'est passé comme prévu. Le vidéoprojecteur a refusé de fonctionner, les cartes ont créé de la confusion au lieu de clarifier, et un élève au fond a lancé un « Madame, on comprend rien » qui a glacé l'atmosphère. J'ai senti la panique monter, mais j'ai pris une respiration et changé de stratégie : j'ai effacé le tableau, dessiné un organigramme simple, et construit l'explication avec eux, pas à pas. Ce moment de bascule — où j'ai cessé de suivre mon plan pour m'adapter à ce que la classe me renvoyait — a été le plus formateur de tout le stage. J'ai terminé la séance épuisée mais avec la certitude que la flexibilité est la compétence la plus sous-estimée du métier d'enseignant."
+      },
+      {
+        "emoji": "🔄",
+        "color": "#10B981",
+        "phase": "Phase 4",
+        "title": "Réflexivité",
+        "description": "En revisitant mes séances — les moments de grâce et les échecs cuisants — j'ai réalisé que l'enseignement est un métier qui s'apprend dans l'après-coup. La séance qui m'avait semblé catastrophique était en réalité celle où j'avais le plus appris : l'improvisation au tableau, le retour des élèves en fin de cours (« Madame, finalement c'était clair »), la complicité née de l'adversité technique. J'ai noté dans mon journal de bord les gestes professionnels à consolider — formuler des consignes plus courtes, varier les modalités d'évaluation formative, laisser davantage de temps de manipulation aux élèves. Mais surtout, j'ai compris que ma double compétence (développement web + pédagogie) n'était pas un simple atout : c'était ma signature professionnelle. L'informatique ne s'enseigne pas comme les mathématiques ou les langues — elle exige une approche visuelle, expérimentale, où l'erreur est un passage obligé plutôt qu'un échec. Cette analyse réflexive m'a définitivement convaincue que je suis faite pour ce métier, non pas malgré mes doutes, mais grâce à eux."
+      }
+    ]
+  },
+  "profile": {
+    "heroDesc": "Un parcours atypique qui relie le développement web à l'enseignement de l'informatique — de la conception de solutions numériques à la formation des citoyens de demain, une même logique de transmission et de création.",
+    "presentation": "Mon parcours est celui d'une reconversion qui n'en est pas vraiment une. Titulaire d'un DUT Génie Informatique (EST Agadir) et d'une Licence Professionnelle en Systèmes Informatiques et Génie Logiciel (EST Essaouira), j'ai d'abord exercé en tant que développeuse web, spécialisée dans la création de solutions WordPress sur mesure. Pendant quatre ans, j'ai conçu des interfaces, résolu des problèmes techniques et accompagné des clients — une expérience qui m'a appris la rigueur du projet, la pédagogie de l'explication et l'importance de l'utilisateur final. Mais une question grandissait en moi : comment transmettre ce que j'avais appris ? La réponse m'est apparue lors d'une formation aux TICE : l'enseignement de l'informatique au collège est le chaînon manquant entre la technique et la société. Aujourd'hui stagiaire au CRMEF Ibn Rochd Marrakech-Safi, je construis ma posture d'enseignante en puisant dans ce double héritage — la rigueur du développeur et l'écoute de la pédagogue. Je ne veux pas seulement apprendre aux élèves à coder : je veux leur donner les clés pour comprendre et agir dans un monde numérique.",
+    "timelineDescriptions": [
+      "Formation professionnelle en enseignement de l'informatique — 16 modules articulant théorie pédagogique, didactique disciplinaire et pratique de terrain",
+      "Spécialisation en conception de systèmes informatiques et génie logiciel — projets en développement web, bases de données et gestion de projets IT",
+      "Formation fondamentale en informatique — algorithmique, programmation, réseaux, architecture des ordinateurs et systèmes d'exploitation",
+      "Filière scientifique généraliste — mathématiques, physique-chimie et sciences de l'ingénieur"
+    ],
+    "realisations": [
+      "Conception et déploiement de sites WordPress personnalisés pour des PME et associations, de l'analyse des besoins au référencement",
+      "Élaboration de séquences pédagogiques en informatique pour le cycle collégial, intégrant des activités débranchées et des exercices pratiques",
+      "Animation de séances d'initiation à la programmation auprès de collégiens, avec une approche progressive allant de l'algorithme au code",
+      "Création de supports didactiques interactifs (diaporamas, fiches d'exercices, activités guidées) pour l'enseignement de la logique binaire et de l'algorithmique"
+    ],
+    "objectifs": [
+      "Obtenir le diplôme de professeur stagiaire et exercer en tant qu'enseignante d'informatique au secondaire collégial",
+      "Développer une pédagogie hybride qui intègre les outils numériques comme leviers d'apprentissage, non comme simples substituts du tableau",
+      "Contribuer à la réduction de la fracture numérique en adaptant mes méthodes aux réalités socio-économiques des établissements publics",
+      "Poursuivre ma veille technologique et didactique pour faire évoluer mes pratiques face aux mutations rapides du champ informatique"
+    ]
+  },
+  "formation": {
+    "heroDesc": "Un parcours de 16 modules construit en deux vagues complémentaires — le premier semestre ancre les fondements théoriques et didactiques, le second les prolonge vers l'action, l'analyse et la production concrète.",
+    "roadmapDescriptions": [
+      "Articuler les objectifs d'apprentissage en séquences cohérentes, en tenant compte des programmes officiels et des rythmes d'acquisition des collégiens.",
+      "Instaurer un cadre de travail propice aux apprentissages par des routines claires, une communication non-violente et une autorité fondée sur la bienveillance.",
+      "Adapter les méthodes d'enseignement à la spécificité de l'informatique — une discipline où le concret et l'abstrait s'entrelacent constamment.",
+      "Intégrer les outils numériques comme leviers pédagogiques : exercices interactifs, simulation, auto-évaluation et collaboration en ligne.",
+      "Mobiliser les grands courants de la psychologie de l'éducation et de la sociologie scolaire pour éclairer les décisions pédagogiques du quotidien.",
+      "Renforcer la maîtrise des outils bureautiques (Excel, Word) et initier à la programmation Python pour une exploitation pédagogique transverse.",
+      "Comprendre l'architecture matérielle des ordinateurs — composants, périphériques, principes de fonctionnement — pour enseigner l'informatique de manière incarnée.",
+      "Adopter une démarche de recherche pour analyser une situation pédagogique problématique et expérimenter des solutions sur le terrain.",
+      "Concevoir et mettre en œuvre des évaluations diagnostique, formative et sommative qui mesurent réellement les compétences, pas seulement la restitution.",
+      "Prévenir les conflits et cultiver la motivation intrinsèque des élèves par des pratiques de classe coopératives et une différenciation pédagogique assumée.",
+      "Comprendre le fonctionnement de la vie scolaire — rôles, acteurs, dispositifs — pour y inscrire son action enseignante en complémentarité.",
+      "Maîtriser le cadre juridique et réglementaire du système éducatif marocain pour exercer ses responsabilités en toute connaissance de ses droits et devoirs.",
+      "Analyser ses propres pratiques à partir de situations vécues en stage, en identifiant les écarts entre intentions et réalisations pour les réduire.",
+      "Produire des ressources pédagogiques adaptées (fiches, exercices, évaluations) en respectant une démarche de conception structurée et réutilisable.",
+      "Maîtriser les fondamentaux des réseaux informatiques — adressage, topologies, équipements, sécurité — pour les enseigner au cycle collégial.",
+      "Concevoir et développer des sites web et des applications légères comme supports d'enseignement et comme objets d'apprentissage pour les élèves."
+    ]
+  },
+  "index": {
+    "aboutDesc": "Développeuse web devenue enseignante stagiaire en informatique, je construis un pont entre la maîtrise technique et la transmission pédagogique — avec la conviction que former aux humanités numériques est l'un des enjeux les plus urgents de notre époque.",
+    "formationDesc": "Seize modules articulés en deux semestres qui tissent ensemble les fils de la pédagogie, de la didactique disciplinaire, de la psychologie scolaire et des compétences techniques — un parcours exigeant qui transforme le regard et la posture.",
+    "skillsDesc": "Des compétences qui ne sont pas des cases étanches : la pédagogie numérique irrigue le développement web, la gestion de classe nourrit la didactique, et l'évaluation éclaire la conception de projets — un profil systémique plutôt que segmenté.",
+    "smpDesc": "Quatre phases d'immersion au Collégial Al Nakhil où la théorie a rencontré le réel — des premiers regards d'observation aux analyses réflexives les plus exigeantes, un stage qui a tout changé.",
+    "visionDesc": "De l'étudiante en génie informatique à la future enseignante, en passant par la développeuse web : un parcours en spirale où chaque étape prépare la suivante sans jamais la répéter.",
+    "moduleDescriptions": [
+      "Organiser les apprentissages en séquences cohérentes, des objectifs pédagogiques aux évaluations.",
+      "Bâtir un climat de classe fondé sur la confiance, la clarté des règles et la régulation positive des comportements.",
+      "Adapter les stratégies d'enseignement à la nature singulière de l'informatique — entre concepts abstraits et manipulations concrètes.",
+      "Faire des outils numériques de véritables leviers d'apprentissage plutôt que de simples substituts.",
+      "Éclairer les décisions pédagogiques par les apports de la psychologie, de la sociologie et de la philosophie de l'éducation.",
+      "Renforcer les compétences bureautiques et découvrir la programmation comme outil transversal.",
+      "Comprendre l'architecture des ordinateurs pour enseigner l'informatique de manière incarnée et visuelle.",
+      "Mener une enquête rigoureuse sur ses propres pratiques pour les améliorer de manière continue.",
+      "Concevoir des évaluations qui mesurent réellement les compétences et informent la régulation pédagogique.",
+      "Prévenir les conflits et cultiver l'autonomie des apprenants par des pratiques coopératives.",
+      "S'inscrire dans le collectif éducatif en comprenant les rouages de la vie scolaire.",
+      "Exercer ses responsabilités en connaissance du cadre légal et réglementaire du système éducatif marocain.",
+      "Développer une posture réflexive à partir de l'analyse des situations professionnelles vécues.",
+      "Concevoir des ressources pédagogiques structurées, adaptées et réutilisables pour la classe d'informatique.",
+      "Maîtriser les principes fondamentaux des réseaux pour les rendre accessibles à des collégiens.",
+      "Créer des sites web et des applications comme supports d'enseignement et objets d'apprentissage."
+    ]
+  }
+}

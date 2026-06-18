@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carte mentale - Bases du réseau informatique</title>
+  <style>
+    :root{
+      --bg1:#e0f2fe;
+      --bg2:#eef2ff;
+      --bg3:#fae8ff;
+      --text:#1e293b;
+      --blue:#2563eb;
+      --cyan:#06b6d4;
+      --purple:#a855f7;
+      --green:#22c55e;
+      --orange:#f59e0b;
+      --pink:#ec4899;
+      --red:#ef4444;
+      --card:rgba(255,255,255,.92);
+      --line:#94a3b8;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+      min-height:100vh;
+      padding:24px;
+    }
+    .container{
+      max-width:1400px;
+      margin:0 auto;
+    }
+    .header{
+      text-align:center;
+      margin-bottom:20px;
+    }
+    .header h1{
+      margin:0 0 8px;
+      font-size:clamp(28px,4vw,42px);
+      color:#0f172a;
+    }
+    .header p{
+      margin:0;
+      color:#475569;
+      font-size:18px;
+    }
+    .toolbar{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin:18px 0 28px;
+    }
+    .btn{
+      border:none;
+      border-radius:14px;
+      padding:12px 18px;
+      font-weight:700;
+      cursor:pointer;
+      color:white;
+      box-shadow:0 10px 24px rgba(37,99,235,.18);
+    }
+    .btn.blue{background:linear-gradient(90deg,var(--blue),var(--cyan))}
+    .btn.purple{background:linear-gradient(90deg,var(--purple),var(--pink))}
+    .hint{
+      text-align:center;
+      color:#64748b;
+      margin-bottom:20px;
+      font-size:15px;
+    }
+    .mindmap{
+      position:relative;
+      min-height:900px;
+      background:rgba(255,255,255,.35);
+      border:1px solid rgba(255,255,255,.65);
+      border-radius:30px;
+      box-shadow:0 20px 60px rgba(15,23,42,.12);
+      overflow:auto;
+      padding:20px;
+    }
+    .canvas{
+      position:relative;
+      width:1320px;
+      height:860px;
+      margin:0 auto;
+    }
+    svg.lines{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      pointer-events:none;
+    }
+    .node{
+      position:absolute;
+      background:var(--card);
+      border-radius:22px;
+      padding:16px 18px;
+      width:230px;
+      box-shadow:0 12px 30px rgba(15,23,42,.12);
+      border:2px solid transparent;
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .node:hover{
+      transform:translateY(-4px) scale(1.02);
+      box-shadow:0 18px 40px rgba(15,23,42,.16);
+    }
+    .node h3{
+      margin:0 0 8px;
+      font-size:20px;
+    }
+    .node ul{
+      margin:0;
+      padding-left:18px;
+      line-height:1.55;
+      font-size:15px;
+    }
+    .center{
+      width:300px;
+      text-align:center;
+      left:510px;
+      top:300px;
+      background:linear-gradient(135deg,#2563eb,#06b6d4,#a855f7);
+      color:white;
+      border:none;
+      padding:24px;
+    }
+    .center h2{
+      margin:0 0 8px;
+      font-size:28px;
+    }
+    .center p{
+      margin:0;
+      font-size:16px;
+      opacity:.96;
+      line-height:1.5;
+    }
+    .n1{left:80px; top:80px; border-color:#60a5fa;}
+    .n2{left:1000px; top:80px; border-color:#34d399;}
+    .n3{left:50px; top:330px; border-color:#f59e0b;}
+    .n4{left:1040px; top:330px; border-color:#f472b6;}
+    .n5{left:120px; top:610px; border-color:#a78bfa;}
+    .n6{left:980px; top:610px; border-color:#f87171;}
+
+    .tag{
+      display:inline-block;
+      padding:4px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:700;
+      margin-bottom:8px;
+      color:white;
+    }
+    .t1{background:#3b82f6;}
+    .t2{background:#10b981;}
+    .t3{background:#f59e0b;}
+    .t4{background:#ec4899;}
+    .t5{background:#8b5cf6;}
+    .t6{background:#ef4444;}
+
+    @media (max-width: 1100px){
+      body{padding:12px}
+      .mindmap{padding:10px}
+    }
+    @media print{
+      body{background:white}
+      .toolbar,.hint{display:none}
+      .mindmap{box-shadow:none;border:1px solid #cbd5e1}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Carte mentale : Les bases du réseau informatique</h1>
+      <p>Niveau 2e année collège • Présentation simple, claire et pédagogique</p>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn blue" onclick="window.print()">Imprimer / Enregistrer en PDF</button>
+      <button class="btn purple" onclick="toggleLines()">Afficher / masquer les liens</button>
+    </div>
+
+    <div class="hint">Astuce : survole les blocs pour mieux les lire. Cette carte résume les notions essentielles du réseau informatique.</div>
+
+    <div class="mindmap">
+      <div class="canvas">
+        <svg class="lines" id="lines" viewBox="0 0 1320 860" preserveAspectRatio="none">
+          <path d="M510 340 C420 240, 320 180, 310 180" stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M810 340 C900 240, 980 180, 1000 180" stroke="#34d399" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M510 410 C420 410, 320 420, 280 430" stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M810 410 C910 410, 1020 420, 1040 430" stroke="#f472b6" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M560 560 C450 650, 330 700, 350 700" stroke="#a78bfa" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M760 560 C880 650, 980 700, 980 700" stroke="#f87171" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+
+        <div class="node center">
+          <h2>Réseau informatique</h2>
+          <p>Ensemble d’appareils reliés entre eux pour communiquer, partager des fichiers, des ressources et accéder à Internet.</p>
+        </div>
+
+        <div class="node n1">
+          <div class="tag t1">Définition</div>
+          <h3>Qu’est-ce que c’est ?</h3>
+          <ul>
+            <li>Relie plusieurs appareils</li>
+            <li>Permet l’échange d’informations</li>
+            <li>Facilite le partage des ressources</li>
+          </ul>
+        </div>
+
+        <div class="node n2">
+          <div class="tag t2">Équipements</div>
+          <h3>Matériel du réseau</h3>
+          <ul>
+            <li>Ordinateur, tablette, smartphone</li>
+            <li>Routeur</li>
+            <li>Câble réseau</li>
+            <li>Point d’accès Wi‑Fi</li>
+          </ul>
+        </div>
+
+        <div class="node n3">
+          <div class="tag t3">Connexion</div>
+          <h3>Comment on se connecte ?</h3>
+          <ul>
+            <li>Avec câble : connexion filaire</li>
+            <li>Avec Wi‑Fi : connexion sans fil</li>
+            <li>Le routeur distribue Internet</li>
+          </ul>
+        </div>
+
+        <div class="node n4">
+          <div class="tag t4">Services</div>
+          <h3>À quoi sert le réseau ?</h3>
+          <ul>
+            <li>Partager des fichiers</li>
+            <li>Utiliser Internet</li>
+            <li>Envoyer des messages</li>
+            <li>Partager une imprimante</li>
+          </ul>
+        </div>
+
+        <div class="node n5">
+          <div class="tag t5">Adresse IP</div>
+          <h3>Identifier les appareils</h3>
+          <ul>
+            <li>Chaque appareil a une adresse</li>
+            <li>Cette adresse s’appelle IP</li>
+            <li>Elle sert à reconnaître l’appareil sur le réseau</li>
+          </ul>
+        </div>
+
+        <div class="node n6">
+          <div class="tag t6">Sécurité</div>
+          <h3>Règles importantes</h3>
+          <ul>
+            <li>Garder son mot de passe secret</li>
+            <li>Ne pas partager ses informations personnelles</li>
+            <li>Utiliser un réseau fiable</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleLines() {
+      const lines = document.getElementById('lines');
+      lines.style.display = lines.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>

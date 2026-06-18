@@ -1,0 +1,202 @@
+{
+  "planning": {
+    "heroDesc": "Construire une progression pédagogique cohérente et adaptée aux besoins des apprenants, en articulant objectifs, compétences et évaluations tout au long de l'année scolaire.",
+    "moduleDesc": "La planification pédagogique est bien plus qu'un exercice administratif : c'est l'armature invisible qui donne sa cohérence à l'enseignement. Ce module nous a formées à concevoir des progressions annuelles et des séquences didactiques en partant des objectifs d'apprentissage définis par le curriculum, jusqu'à l'intégration d'évaluations formatives alignées. Pour une enseignante d'informatique, la difficulté réside dans la traduction de concepts techniques abstraits en objectifs pédagogiques progressifs et accessibles. Ce module m'a fourni les outils conceptuels — taxonomies, scénarisation, alignement curriculaire — pour opérationnaliser cette traduction de manière rigoureuse et réflexive.",
+    "learnings": [
+      "Élaborer une progression annuelle et des séquences didactiques cohérentes en alignant objectifs pédagogiques, contenus disciplinaires et modalités d'évaluation",
+      "Utiliser la taxonomie de Bloom pour formuler des objectifs d'apprentissage hiérarchisés et vérifiables dans le contexte de l'enseignement de l'informatique",
+      "Concevoir des scénarios pédagogiques intégrant une variété d'activités (découverte, structuration, réinvestissement, évaluation) adaptées aux différents moments de l'apprentissage",
+      "Anticiper les obstacles cognitifs des élèves et prévoir des dispositifs de différenciation et de remédiation dès la phase de planification"
+    ],
+    "concepts": {
+      "fondements": {
+        "title": "La progression comme cadre théorique",
+        "desc": "Les modèles de planification s'appuient sur des théories cognitives et curriculaires. La taxonomie de Bloom révisée (Anderson & Krathwohl) fournit une hiérarchie des processus cognitifs, de la mémorisation à la création. L'alignement constructif de Biggs relie objectifs, activités et évaluation dans une cohérence systémique. Ces cadres permettent de passer d'une intuition pédagogique à une conception raisonnée et justifiable."
+      },
+      "application": {
+        "title": "De l'intention à la fiche pédagogique",
+        "desc": "L'application s'est concrétisée par la construction d'une progression annuelle complète pour le tronc commun en informatique, déclinée en séquences et séances. Chaque fiche de séance détaille les objectifs opérationnels, le déroulement temporel, les consignes, les supports et les critères d'évaluation formative. L'exercice a révélé la complexité de calibrer le volume d'activités sur une heure de cours réelle, entre gestion de classe et imprévus."
+      },
+      "reflexivite": {
+        "title": "Planification et flexibilité : une dialectique",
+        "desc": "L'épreuve de la planification m'a confrontée à une tension centrale : comment concilier un cadre structurant avec l'adaptation nécessaire aux réactions des élèves ? J'ai compris qu'une planification professionnelle n'est pas un script rigide mais une hypothèse de travail qui intègre des choix conscients et des alternatives. La vraie compétence réside dans la capacité à réguler son plan en temps réel sans perdre la cohérence de l'ensemble."
+      }
+    },
+    "reflection": "J'aborde ce module avec un regard particulier, moi qui viens du développement web où la planification d'un projet suit des méthodologies comme Agile ou Scrum. J'ai d'abord cru que planifier un cours relevait du même exercice : décomposer en tâches, estimer des durées, livrer. Ce module m'a fait comprendre la différence fondamentale : en pédagogie, l'objet de la planification n'est pas un produit fini mais un processus cognitif humain, avec ses zones d'incertitude et ses temporalités propres. La difficulté la plus marquante a été d'écrire des objectifs réellement opérationnels — mes premières versions oscillaient entre le vague ('comprendre les réseaux') et le trop technique sans ancrage pédagogique. La taxonomie de Bloom m'a fourni une grille pour graduer finement la complexité et surtout pour vérifier si l'objectif est atteignable. Une question me travaille encore : comment articuler une progression annuelle imposée par le programme avec la liberté pédagogique et l'adaptation aux rythmes de la classe ? Je soupçonne que la réponse se construit dans l'expérience, par une navigation constante entre le plan et l'improvisation structurée."
+  },
+  "classroom-management-1": {
+    "heroDesc": "Acquérir les principes fondamentaux de la gestion de classe pour instaurer un climat d'apprentissage serein, respectueux et propice aux apprentissages.",
+    "moduleDesc": "La gestion de classe est souvent perçue comme l'angle mort de la formation des enseignants débutants, pourtant c'est le préalable indispensable à tout apprentissage. Ce module a abordé les théories de l'autorité éducative, la communication non-violente, les stratégies de prévention des conflits et l'établissement d'un cadre clair et cohérent. En tant qu'enseignante stagiaire en informatique, la question du rapport à l'autorité est particulièrement sensible : dans une discipline où les élèves ont parfois des compétences techniques avancées, la légitimité de l'enseignant ne va pas de soi et doit se construire sur d'autres bases que la seule expertise disciplinaire.",
+    "learnings": [
+      "Établir un cadre de fonctionnement clair et cohérent en définissant avec les élèves les règles, les routines et les rituels de la classe",
+      "Utiliser les principes de la communication non-violente (CNV) pour désamorcer les tensions et favoriser un dialogue constructif avec les élèves",
+      "Distinguer les différentes formes d'autorité (statutaire, compétence, charismatique) et identifier les leviers pour construire une autorité éducative légitime",
+      "Analyser les comportements perturbateurs selon leur origine (besoin non satisfait, difficulté scolaire, facteurs externes) pour adapter ses interventions"
+    ],
+    "concepts": {
+      "fondements": {
+        "title": "L'autorité éducative repensée",
+        "desc": "Les travaux de Prairat et de Houssaye renouvellent profondément la conception de l'autorité : d'un pouvoir imposé, elle devient une relation qui se construit dans la reconnaissance mutuelle. La distinction entre autorité statutaire (liée à la fonction) et autorité de compétence (liée à la maîtrise disciplinaire et pédagogique) est cruciale pour comprendre pourquoi un enseignant débutant peut peiner à imposer son cadre, même avec une expertise technique solide."
+      },
+      "application": {
+        "title": "Rituels, routines et posture professionnelle",
+        "desc": "L'application est passée par la conception de scénarios de gestion de classe : accueil des élèves, transitions entre activités, gestion des prises de parole, protocole d'entrée en salle informatique. J'ai élaboré un référentiel de règles et de sanctions/réparations, ainsi qu'une grille d'observation de ma propre pratique pour prendre conscience de mes micro-gestes professionnels (placement, regard, ton) qui influencent le climat de classe."
+      },
+      "reflexivite": {
+        "title": "Le paradoxe du contrôle",
+        "desc": "La gestion de classe m'a confrontée à un paradoxe : plus on cherche à tout contrôler, plus on génère de résistance. La 'bonne gestion' n'est pas celle qui élimine toute perturbation, mais celle qui crée les conditions pour que les élèves s'autorégulent. Cela suppose de lâcher prise sur une partie du contrôle et d'installer une confiance réciproque. Un défi immense quand on débute et qu'on cherche à prouver sa légitimité."
+      }
+    },
+    "reflection": "Venant du monde du développement web où les processus sont prévisibles et les bugs reproductibles, la gestion de classe m'est apparue comme un saut dans l'incertain. Aucun débogueur ne permet de comprendre pourquoi un élève refuse de travailler ou pourquoi un groupe entier s'agite. La première difficulté a été d'accepter que les comportements dits 'perturbateurs' ne sont pas des bugs à éliminer mais des messages à décoder. La communication non-violente a été une révélation : reformuler 'Arrête de parler' en 'J'ai besoin de silence pour expliquer cette consigne' change la nature de la relation. Le module m'a confrontée à une question identitaire forte : quel type d'enseignante veux-je être ? Autoritaire ? Démocratique ? Facilitatrice ? Je n'ai pas encore la réponse, mais j'ai désormais un vocabulaire conceptuel pour penser cette question et des outils pour expérimenter différentes postures. Un défi concret pour moi sera d'incarner à la fois la bienveillance et l'exigence, un équilibre subtil que je devrai construire séance après séance avec mes futurs élèves."
+  },
+  "didactics": {
+    "heroDesc": "Comprendre les spécificités de la didactique de l'informatique et les mécanismes qui permettent la transformation des savoirs savants en savoirs enseignés.",
+    "moduleDesc": "La didactique interroge la transposition des savoirs savants en savoirs à enseigner, puis en savoirs réellement appris par les élèves. Ce module nous a plongées dans les spécificités de la didactique de l'informatique : concepts structurants, obstacles épistémologiques, représentations initiales des apprenants et ingénierie didactique. Pour une ancienne développeuse comme moi, ce module a été le plus déstabilisant et le plus formateur : il m'a forcée à déconstruire mon propre rapport au savoir informatique pour entrer dans la tête d'un élève débutant. Savoir coder ne suffit pas à savoir enseigner le code — cette évidence cache une complexité didactique souvent sous-estimée.",
+    "learnings": [
+      "Analyser les processus de transposition didactique, du savoir savant (pratiques des informaticiens) au savoir enseigné (contenus du curriculum) en passant par le savoir à enseigner (programmes officiels)",
+      "Identifier les obstacles épistémologiques spécifiques à l'informatique (abstraction, récursivité, pointeurs) et les conceptions erronées fréquentes chez les élèves débutants",
+      "Concevoir des situations didactiques qui placent l'élève en situation de résolution de problèmes authentiques, en mobilisant les concepts de contrat didactique et de dévolution",
+      "Utiliser des outils d'analyse didactique (analyse a priori, grille d'observation) pour évaluer et réguler ses séquences d'enseignement"
+    ],
+    "concepts": {
+      "fondements": {
+        "title": "La transposition didactique en informatique",
+        "desc": "Le modèle de Chevallard distingue le savoir savant (la pratique experte du développeur), le savoir à enseigner (les programmes officiels) et le savoir enseigné (ce qui se passe réellement en classe). En informatique, l'écart est particulièrement grand : les élèves arrivent avec des représentations souvent erronées (confusion entre usage d'un logiciel et programmation, ou entre web et Internet). Le travail didactique consiste à créer des situations qui permettent une reconstruction progressive de ces concepts."
+      },
+      "application": {
+        "title": "Mise en situation et analyse didactique",
+        "desc": "L'application a pris la forme de l'analyse de séquences existantes et de la conception d'une situation didactique autour de l'algorithmique de base. J'ai utilisé la grille d'analyse didactique pour anticiper les conceptions initiales des élèves, prévoir les obstacles et concevoir un scénario qui permette une dévolution progressive du problème. L'exercice m'a fait réaliser à quel point il est difficile de faire abstraction de son propre savoir expert pour se mettre au niveau de l'apprenant."
+      },
+      "reflexivite": {
+        "title": "Déconstruire son propre savoir",
+        "desc": "L'acte didactique le plus exigeant est de déconstruire son propre rapport au savoir. En tant que développeuse, les concepts comme la boucle 'pour' ou la condition 'si... alors' me sont naturels. Le module m'a obligée à me souvenir de mes propres difficultés d'apprentissage et à comprendre que la connaissance experte peut être un obstacle à l'enseignement quand elle empêche d'anticiper les difficultés des débutants. 'L'illusion de la transparence' est un piège didactique permanent."
+      }
+    },
+    "reflection": "Ce module a été le plus déstabilisant et le plus fécond de mon semestre. Je suis arrivée au CRMEF avec une légitimité technique solide — plusieurs années de développement WordPress, PHP, HTML/CSS — et je pensais que cette expertise faciliterait mon enseignement. La didactique m'a fait comprendre le contraire : l'expertise non réfléchie peut être un obstacle. J'ai vécu une expérience marquante lors d'un micro-enseignement où j'ai expliqué les boucles à des pairs jouant le rôle d'élèves. J'utilisais un vocabulaire technique que je croyais simple, mais mes 'élèves' étaient perdus. Ce décalage entre mon intention et leur compréhension était le symptôme de ce que la didactique appelle l'illusion de la transparence : je projetais mes propres représentations d'experte sur des novices. La notion de contrat didactique (Brousseau) m'a particulièrement interpellée : ce pacte implicite entre enseignant et élève sur ce qui est attendu peut être source de malentendus fondamentaux. Si l'élève ne comprend pas ce que je lui demande de faire, ce n'est pas un échec de sa part — c'est d'abord une insuffisance de ma médiation didactique. Je repars de ce module avec une question centrale pour ma future pratique : comment rendre visibles les implicites de ma discipline ?"
+  },
+  "tice": {
+    "heroDesc": "Intégrer les technologies de l'information et de la communication de manière pédagogiquement pertinente pour enrichir les situations d'enseignement-apprentissage.",
+    "moduleDesc": "Les TICE ne sont pas une simple transposition numérique des pratiques pédagogiques existantes : elles transforment en profondeur la relation au savoir, les modalités d'interaction et le rôle de l'enseignant. Ce module nous a familiarisées avec les cadres théoriques d'intégration du numérique (SAMR, TPACK), les outils numériques éducatifs (LMS, exerciseurs, simulation) et les enjeux de citoyenneté numérique. Pour moi qui viens du développement web, ce module a été un pont entre ma culture technique et ma nouvelle identité pédagogique : j'ai appris à évaluer un outil numérique non plus pour ses fonctionnalités techniques, mais pour son potentiel d'apprentissage.",
+    "learnings": [
+      "Analyser l'intégration du numérique selon les modèles SAMR (Substitution-Augmentation-Modification-Redéfinition) et TPACK (Technological Pedagogical Content Knowledge) pour évaluer la plus-value pédagogique d'un outil",
+      "Concevoir des activités pédagogiques intégrant le numérique de manière pertinente : classes virtuelles, exerciseurs interactifs, simulation, travail collaboratif en ligne",
+      "Évaluer les ressources numériques éducatives selon des critères pédagogiques, techniques et éthiques (accessibilité, protection des données, fiabilité)",
+      "Sensibiliser les élèves aux enjeux de la citoyenneté numérique : identité en ligne, fiabilité de l'information, cyberharcèlement, empreinte numérique"
+    ],
+    "concepts": {
+      "fondements": {
+        "title": "Du gadget à l'outil pédagogique",
+        "desc": "Le modèle SAMR (Puentedura) propose une gradation de l'intégration technologique : de la simple substitution d'un outil traditionnel à la redéfinition d'une tâche impossible sans le numérique. Le cadre TPACK (Mishra & Koehler) insiste sur l'articulation entre savoir disciplinaire, savoir pédagogique et savoir technologique. Ces modèles fournissent une grille pour évaluer si l'usage du numérique est une innovation réelle ou un simple habillage technique."
+      },
+      "application": {
+        "title": "Scénarios TICE en contexte réel",
+        "desc": "L'application a consisté à concevoir des scénarios d'intégration du numérique pour l'enseignement de l'informatique : utilisation d'un simulateur de réseau (Packet Tracer) pour visualiser des concepts abstraits, création d'exercices interactifs avec Python Tutor pour illustrer l'exécution pas à pas, et scénario de classe inversée utilisant une capsule vidéo. J'ai également analysé une séquence existante selon le modèle SAMR pour identifier des pistes d'enrichissement numérique."
+      },
+      "reflexivite": {
+        "title": "Le numérique n'est pas une fin",
+        "desc": "Mon parcours de développeuse web m'a d'abord poussée à vouloir intégrer le numérique par enthousiasme technique. Le module m'a appris à résister à cette tentation : la question n'est pas 'quel outil numérique puis-je utiliser ?' mais 'quel apprentissage visé-je, et le numérique apporte-t-il une plus-value réelle ?' J'ai compris que le bon usage des TICE est celui qui s'efface au service de la pédagogie."
+      }
+    },
+    "reflection": "Ce module a résonné particulièrement avec mon parcours. Pendant des années, j'ai conçu des sites web avec une logique de produit : l'outil était la finalité. Les TICE m'ont demandé un renversement de perspective : l'outil numérique devient un moyen au service d'une intention pédagogique. Le modèle SAMR a été un révélateur : j'ai analysé des usages que je trouvais 'innovants' et j'ai constaté qu'ils relevaient souvent du premier niveau (Substitution) — remplacer le tableau par un diaporama, le papier par un PDF. La véritable transformation (Redéfinition), c'est de créer des tâches impossibles sans le numérique, comme la collaboration synchrone sur un dépôt Git entre élèves de différents établissements. Une difficulté spécifique est apparue : comment gérer la diversité des compétences numériques des élèves dans une même classe ? Certains maîtrisent des outils complexes quand d'autres peinent à utiliser une messagerie. Cette hétérogénéité exige une différenciation que je n'avais pas anticipée. La question qui demeure est de savoir comment éviter que le numérique, censé être un outil d'inclusion, ne creuse les inégalités entre élèves. C'est un enjeu de justice scolaire que je devrai garder à l'esprit dans mes choix technopédagogiques."
+  },
+  "educational-sciences": {
+    "heroDesc": "S'approprier les fondements théoriques des sciences de l'éducation dispensés en arabe pour éclairer et problématiser sa pratique enseignante.",
+    "moduleDesc": "[Contenu en arabe à insérer] Ce module, dispensé en arabe, a constitué le socle théorique de notre formation en nous introduisant aux grands courants de la pensée éducative : philosophie de l'éducation, sociologie de l'école, psychologie des apprentissages et histoire des systèmes éducatifs. Il nous a fourni le vocabulaire conceptuel et les repères historiques nécessaires pour comprendre les finalités de l'école, les inégalités scolaires et les débats qui traversent le système éducatif marocain.",
+    "learnings": [
+      "Distinguer les principaux courants philosophiques de l'éducation (essentialisme, progressisme, reconstructionnisme) et leurs implications pour la pratique de classe",
+      "Analyser les déterminants sociaux de la réussite scolaire à l'aide des concepts de capital culturel, d'habitus et de reproduction sociale (Bourdieu, Passeron)",
+      "Identifier les apports de la psychologie cognitive et du constructivisme (Piaget, Vygotsky) pour comprendre les mécanismes d'apprentissage",
+      "Situer le système éducatif marocain dans son évolution historique et ses enjeux contemporains (réforme, qualité, équité)"
+    ],
+    "concepts": {
+      "fondements": {
+        "title": "Penser l'éducation philosophiquement",
+        "desc": "[Contenu en arabe à insérer] Les sciences de l'éducation puisent dans la philosophie, la sociologie et la psychologie pour construire un regard multidimensionnel sur les phénomènes éducatifs. Les notions de finalité de l'éducation (instruction vs. émancipation), de reproduction sociale et de développement cognitif forment un trépied conceptuel pour penser sa pratique au-delà du seul geste pédagogique."
+      },
+      "application": {
+        "title": "Articuler théorie et pratique",
+        "desc": "[Contenu en arabe à insérer] L'application s'est faite par l'étude de cas concrets : analyse d'une situation de décrochage scolaire à l'aide des concepts sociologiques, conception d'une séquence intégrant les principes constructivistes, et réflexion sur les valeurs véhiculées par mes choix pédagogiques. Ces exercices ont démontré que la théorie n'est pas une abstraction déconnectée mais une caisse à outils pour lire et agir sur le réel de la classe."
+      },
+      "reflexivite": {
+        "title": "Décentrer son regard",
+        "desc": "Aborder les sciences de l'éducation en arabe a été un défi intellectuel qui m'a obligée à construire une double compétence conceptuelle et linguistique. Au-delà de la langue, ce module m'a appris à décentrer mon regard : un élève en difficulté n'est pas seulement un apprenant qui ne comprend pas, c'est aussi un sujet social dont le parcours est façonné par des déterminismes que l'école peut renforcer ou atténuer. Cette prise de conscience rend mon engagement enseignant à la fois plus lucide et plus humble."
+      }
+    },
+    "reflection": "[Contenu en arabe à insérer] Ce module, dispensé entièrement en arabe, a représenté un défi qui dépasse la simple barrière linguistique. Il m'a confrontée à une réalité du système éducatif marocain : la nécessité de penser l'enseignement dans les deux langues, de circuler entre les cadres conceptuels francophones et arabophones. La découverte des travaux de Bourdieu et Passeron sur la reproduction sociale a été un choc intellectuel : comment prétendre enseigner l'informatique sans comprendre que les inégalités d'accès au numérique sont aussi des inégalités sociales ? Cette question m'habite désormais. Le concept de capital culturel m'a aidée à comprendre pourquoi certains élèves arrivent en classe avec des facilités que d'autres n'ont pas, et pourquoi l'école peut involontairement renforcer ces écarts. La question qui émerge est pratique : comment, en tant qu'enseignante d'informatique, puis-je contribuer à réduire ces inégalités plutôt qu'à les reproduire ? Ce module m'a donné des clés théoriques pour penser cette question, mais la réponse concrète reste à construire dans ma future pratique de classe."
+  },
+  "reinforcement-1": {
+    "heroDesc": "Consolider les compétences techniques en bureautique (Excel, Word) et en programmation Python pour une utilisation professionnelle et pédagogique.",
+    "moduleDesc": "Ce module de renforcement visait à consolider et approfondir les compétences techniques fondamentales que tout enseignant d'informatique doit maîtriser : les outils bureautiques avancés (Excel, Word) et les bases de la programmation Python. Au-delà de la simple mise à niveau, il s'agissait de développer un regard pédagogique sur ces outils : comment enseigner Excel à des élèves qui n'en ont jamais utilisé ? Comment concevoir des exercices progressifs en Python ? Pour moi qui avais déjà des bases solides en développement, l'enjeu était moins l'acquisition technique que la réflexion sur la transposition didactique de ces savoir-faire.",
+    "learnings": [
+      "Maîtriser les fonctionnalités avancées d'Excel (tableaux croisés dynamiques, fonctions conditionnelles, graphiques) pour produire des supports pédagogiques et analyser des données de suivi des élèves",
+      "Utiliser Word de manière professionnelle pour la mise en forme de documents longs, le publipostage et la création de modèles de fiches pédagogiques",
+      "Programmer en Python en mobilisant les structures de contrôle, les fonctions, les listes et les dictionnaires pour résoudre des problèmes simples et concevoir des exercices progressifs",
+      "Réfléchir à la progression pédagogique pour l'enseignement de la programmation : de l'algorithme au code, du simple au complexe, du concret à l'abstrait"
+    ],
+    "concepts": {
+      "fondements": {
+        "title": "La technique comme médium pédagogique",
+        "desc": "Ce module repose sur une distinction fondamentale : maîtriser un outil pour soi n'implique pas de savoir l'enseigner. Les compétences techniques en bureautique et en programmation doivent être repensées à travers le prisme de la progression pédagogique, de l'étayage et de la différenciation. Le choix des exercices, leur ordonnancement et leur niveau de guidage sont autant de décisions didactiques qui transforment un savoir technique en objet d'enseignement."
+      },
+      "application": {
+        "title": "Exercices progressifs et scénarios d'usage",
+        "desc": "L'application a consisté à créer une série d'exercices gradués en Python, du niveau débutant (variables, affectation) jusqu'à des problèmes plus complexes impliquant des structures de données. Pour Excel, j'ai conçu un scénario d'évaluation formative basé sur le suivi de notes, illustrant comment l'outil peut être utilisé à la fois comme contenu d'enseignement et comme outil professionnel pour l'enseignant."
+      },
+      "reflexivite": {
+        "title": "Voir au-delà de l'évidence technique",
+        "desc": "Ma familiarité avec la programmation a rendu ce module paradoxal : techniquement, il ne m'a rien appris de nouveau, mais pédagogiquement, il m'a obligée à déconstruire des évidences. Expliquer ce qu'est une variable à quelqu'un qui n'a jamais programmé exige de trouver des analogies pertinentes, des représentations concrètes, des chemins d'accès progressifs à l'abstraction. La difficulté n'est plus de coder, mais de faire entrer l'autre dans le code."
+      }
+    },
+    "reflection": "Ce module de renforcement a été pour moi une expérience de décentrement par rapport à ma propre expertise. Arrivant avec plusieurs années de pratique en développement web, j'aurais pu considérer ces heures comme une simple formalité. Le module m'a surprise en me confrontant à une difficulté inattendue : comment enseigner ce qui me semble évident ? Lors d'un exercice où nous devions concevoir une séquence d'introduction aux variables en Python, j'ai réalisé que j'utilisais spontanément des métaphores techniques (la variable comme 'boîte en mémoire') qui présupposaient une compréhension de l'architecture mémoire chez l'élève. Il a fallu trouver des analogies plus ancrées dans leur quotidien. L'écart entre mon propre chemin d'apprentissage autodidacte — par essais-erreurs, avec des projets concrets — et ce que le curriculum impose est devenu tangible. Cet écart est une ressource : il me permet d'anticiper les difficultés que mes futurs élèves rencontreront. Une interrogation subsiste : comment préserver la motivation des élèves quand les exercices d'initiation à la programmation sont nécessairement éloignés des applications concrètes qui font le sel de la discipline ?"
+  },
+  "reinforcement-2": {
+    "heroDesc": "Approfondir les connaissances sur l'architecture des ordinateurs et les composants matériels pour enseigner avec précision les fondements physiques et logiques de l'informatique.",
+    "moduleDesc": "L'architecture des ordinateurs constitue le soubassement concret de l'informatique : comprendre comment fonctionne un processeur, comment la mémoire hiérarchise les données, comment les périphériques communiquent. Ce module a renforcé nos connaissances sur les composants matériels, le modèle de von Neumann, les systèmes de numération et les principes de base de l'électronique numérique. L'enjeu pour l'enseignant d'informatique est crucial : comment expliquer des concepts aussi abstraits que le binaire, la mémoire cache ou le pipeline d'instructions à des élèves qui voient l'ordinateur comme une boîte noire ? Ce module nous a fourni les connaissances techniques et les stratégies pédagogiques pour relever ce défi.",
+    "learnings": [
+      "Maîtriser l'architecture de von Neumann (UC, mémoire, bus, entrées-sorties) et le rôle de chaque composant dans le fonctionnement global de l'ordinateur",
+      "Convertir et manipuler les systèmes de numération (binaire, décimal, hexadécimal) et comprendre leur lien avec le fonctionnement interne du processeur",
+      "Analyser le cycle d'exécution d'une instruction (fetch-decode-execute) et les principes de base du pipeline et de la hiérarchie mémoire",
+      "Concevoir des activités pédagogiques concrètes (analogies, maquettes, simulateurs) pour rendre accessibles les concepts d'architecture aux élèves débutants"
+    ],
+    "concepts": {
+      "fondements": {
+        "title": "De la logique au silicium",
+        "desc": "L'architecture des ordinateurs repose sur des principes logiques et physiques : du transistor à la porte logique, du circuit intégré au processeur. Le modèle de von Neumann fournit un cadre conceptuel unifié qui structure la compréhension du fonctionnement d'un ordinateur. Maîtriser ces fondements permet à l'enseignant de répondre aux questions des élèves avec précision et de construire des représentations mentales correctes dès le début de l'apprentissage."
+      },
+      "application": {
+        "title": "Simulations et analogies pédagogiques",
+        "desc": "L'application a pris la forme de la conception d'une séquence pédagogique sur l'architecture, intégrant l'utilisation de simulateurs logiques (Logisim) pour visualiser le fonctionnement d'un circuit simple et du modèle 'papier' de l'exécution d'instructions. J'ai également élaboré des analogies (le processeur comme chef de cuisine, la mémoire comme bibliothèque) pour faciliter l'accès aux concepts abstraits."
+      },
+      "reflexivite": {
+        "title": "Rendre l'abstrait tangible",
+        "desc": "L'architecture des ordinateurs est le domaine où l'écart entre le phénomène physique et sa représentation mentale est le plus grand : on ne voit pas un bit circuler sur un bus. Le défi pédagogique est de construire des représentations qui ne soient pas des simplifications trompeuses. J'ai découvert que la meilleure approche n'est pas d'aller du simple au complexe, mais du concret (ce que l'élève voit) à l'abstrait (ce qui se passe réellement), en multipliant les points d'entrée."
+      }
+    },
+    "reflection": "Contrairement aux modules purement pédagogiques, celui-ci m'a replongée dans mes années de formation technique à l'EST d'Agadir, où l'architecture des ordinateurs faisait partie du tronc commun. J'ai retrouvé des concepts familiers — le modèle de von Neumann, les portes logiques, le binaire — mais avec un regard radicalement neuf : celui de l'enseignante qui doit transmettre ces concepts à des élèves novices. La difficulté la plus frappante a été de réaliser à quel point ces notions sont abstraites pour un non-initié. Quand on maîtrise le binaire, on oublie l'effort cognitif qu'a exigé son assimilation. J'ai expérimenté cela en tentant d'expliquer le complément à deux à une collègue non-informaticienne : mes explications, techniquement correctes, provoquaient plus de confusion que de clarté. J'ai dû trouver des métaphores ancrées dans des expériences communes (le compteur kilométrique, la symétrie autour de zéro). Cette expérience m'a confirmé que la connaissance experte est parfois un obstacle à l'enseignement, et que la véritable compétence pédagogique consiste à se faire naïve pour accompagner l'autre dans son propre chemin de compréhension. La question pratique qui reste ouverte : comment évaluer la compréhension réelle de concepts aussi abstraits sans se contenter d'une restitution mécanique ?"
+  },
+  "action-research": {
+    "heroDesc": "S'initier à la recherche-action comme démarche d'analyse réflexive et d'amélioration continue de sa pratique pédagogique.",
+    "moduleDesc": "La recherche-action est une méthodologie qui place l'enseignant en position de praticien-chercheur : face à une difficulté identifiée dans sa classe, il met en place une intervention, en observe les effets et ajuste sa pratique en conséquence. Ce module nous a formées aux étapes de cette démarche : problématisation à partir d'une situation professionnelle, revue de littérature, recueil et analyse de données, mise en œuvre d'un plan d'action et évaluation réflexive. L'enjeu est de dépasser le tâtonnement intuitif pour adopter une posture rigoureuse d'expérimentation et d'analyse. Pour une enseignante stagiaire, c'est l'outil qui permet de transformer les difficultés quotidiennes en occasions de développement professionnel.",
+    "learnings": [
+      "Formuler une problématique de recherche-action à partir d'une difficulté authentique rencontrée dans sa pratique de classe",
+      "Concevoir un dispositif de recueil de données adapté à sa question de recherche (observation, entretien, questionnaire, journal de bord)",
+      "Analyser les données recueillies pour identifier des tendances, des régularités et des axes d'amélioration de sa pratique",
+      "Rédiger un rapport de recherche-action structuré selon les normes académiques et en tirer des implications concrètes pour sa pratique"
+    ],
+    "concepts": {
+      "fondements": {
+        "title": "Le praticien réflexif",
+        "desc": "La recherche-action s'inscrit dans la tradition du praticien réflexif (Schön) et de la recherche participative (Lewin). Elle se distingue de la recherche académique classique par son ancrage dans la pratique et son objectif d'amélioration immédiate. Le cycle 'planifier-agir-observer-réfléchir' (Kemmis & McTaggart) structure la démarche. Ce cadre théorique légitime l'expertise du praticien et en fait un producteur de savoirs professionnels."
+      },
+      "application": {
+        "title": "De l'intuition à l'investigation",
+        "desc": "L'application a consisté à concevoir un projet de recherche-action complet autour d'une question personnelle : comment favoriser l'engagement des élèves lors des séances de programmation Python ? J'ai élaboré une grille d'observation, préparé un questionnaire élèves et conçu un plan d'intervention basé sur la pédagogie de projet. Bien que non mené en conditions réelles, l'exercice a structuré une démarche rigoureuse d'investigation de sa propre pratique."
+      },
+      "reflexivite": {
+        "title": "Chercheuse de ma propre pratique",
+        "desc": "La recherche-action propose une posture intellectuelle radicalement nouvelle : ne plus subir les difficultés de la classe comme des échecs personnels, mais les transformer en questions de recherche. Un élève en difficulté n'est plus une menace pour mon autorité, mais un indicateur qu'un aspect de mon dispositif doit être repensé. Cette externalisation du problème par la recherche dédramatise l'échec et le transforme en donnée à analyser."
+      }
+    },
+    "reflection": "La recherche-action est sans doute le module qui a le plus transformé ma conception du métier d'enseignant. Avant le CRMEF, je voyais l'enseignement comme une transmission de savoirs : je maîtrise une matière, je l'explique, l'élève l'apprend. Si cela ne fonctionnait pas, c'était soit un problème de méthode, soit un problème d'élève. La recherche-action m'a offert un cadre pour penser les difficultés autrement : non comme des échecs mais comme des points de départ pour une investigation systématique. Projetant mon futur stage, j'ai choisi de travailler sur une question qui me tient à cœur : comment engager les élèves dans l'apprentissage de la programmation ? J'ai construit une grille d'observation des comportements d'engagement, préparé un questionnaire pour recueillir le point de vue des élèves et imaginé une séquence basée sur un projet concret (créer un mini-jeu en Python). Ce qui m'a le plus marquée, c'est la rigueur méthodologique exigée : on ne peut pas affirmer que 'les élèves ont mieux travaillé' sans avoir des données pour le prouver. Cette exigence change le rapport à sa pratique : on passe de l'impression à l'observation, de l'intuition à l'analyse. La question que je garde pour la suite est de savoir comment maintenir cette posture de recherche dans le quotidien d'un enseignant, entre les urgences de la classe et les contraintes administratives. Le journal de bord sera mon allié pour ne pas perdre ce fil réflexif."
+  }
+}

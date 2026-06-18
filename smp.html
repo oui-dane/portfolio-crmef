@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SMP | Portfolio CRMEF — Stage en Milieu Professionnel</title>
+  <meta name="description" content="Stage en milieu professionnel d'Ouijdane Louchachha à l'Établissement collégial Al Nakhil — Observation, co-animation, animation et analyse réflexive.">
+  <meta property="og:title" content="SMP — Portfolio CRMEF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>●</text></svg>">
+  <style>
+    .smp-info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:20px}
+    .smp-info-cell{padding:14px 16px;background:var(--card);border:1px solid var(--card-border);border-radius:12px;font-size:.88rem}
+    .smp-info-cell strong{display:block;font-size:.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+    .smp-group-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:24px}
+    .smp-group-card{padding:20px;border-radius:var(--radius-md);background:var(--card);border:1px solid var(--card-border);text-align:center;transition:var(--transition)}
+    .smp-group-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(77,163,255,.2)}
+    .smp-group-card i{font-size:1.5rem;color:var(--accent);margin-bottom:10px;display:block}
+    .smp-group-card h4{font-size:.9rem;font-weight:700;margin-bottom:4px}
+    .smp-group-card p{font-size:.8rem;color:var(--text-light);line-height:1.5}
+    .smp-axes-timeline{position:relative;max-width:700px;margin:0 auto}
+    .smp-axes-timeline::before{content:'';position:absolute;left:32px;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--accent),var(--secondary),#10B981,#F59E0B,#64748B);border-radius:2px}
+    .smp-axe-item{display:flex;align-items:flex-start;gap:24px;padding:20px 0;position:relative}
+    .smp-axe-icon{flex-shrink:0;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;position:relative;z-index:1;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+    .smp-axe-item:nth-child(1) .smp-axe-icon{background:linear-gradient(135deg,#64748B,#475569)}
+    .smp-axe-item:nth-child(2) .smp-axe-icon{background:linear-gradient(135deg,var(--secondary),var(--primary))}
+    .smp-axe-item:nth-child(3) .smp-axe-icon{background:linear-gradient(135deg,#10B981,#059669)}
+    .smp-axe-item:nth-child(4) .smp-axe-icon{background:linear-gradient(135deg,var(--accent),var(--secondary))}
+    .smp-axe-item:nth-child(5) .smp-axe-icon{background:linear-gradient(135deg,#F59E0B,#D97706)}
+    .smp-axe-body{flex:1;padding:18px 22px;border-radius:var(--radius-md);background:var(--card);border:1px solid var(--card-border);transition:var(--transition)}
+    .smp-axe-body:hover{transform:translateX(4px);box-shadow:var(--shadow-md);border-color:rgba(77,163,255,.2)}
+    .smp-axe-body h4{font-size:.98rem;font-weight:800;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+    .smp-axe-body .axe-num{font-size:.68rem;font-weight:700;color:var(--accent);background:rgba(77,163,255,.08);padding:2px 10px;border-radius:999px}
+    .smp-axe-body p{font-size:.85rem;color:var(--text-light);line-height:1.6}
+    .smp-seance-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:32px}
+    .smp-seance-card{padding:28px 24px;border-radius:var(--radius-md);background:var(--card);border:1px solid var(--card-border);transition:var(--transition);position:relative;overflow:hidden}
+    .smp-seance-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:rgba(77,163,255,.2)}
+    .smp-seance-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--secondary),var(--accent));opacity:0;transition:opacity .3s}
+    .smp-seance-card:hover::before{opacity:1}
+    .smp-seance-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--secondary),var(--accent));color:#fff;font-weight:800;font-size:.85rem;margin-bottom:14px}
+    .smp-seance-type{display:inline-block;font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);background:rgba(77,163,255,.08);padding:3px 10px;border-radius:20px;margin-bottom:10px}
+    .smp-seance-card h4{font-size:.98rem;font-weight:700;margin-bottom:8px}
+    .smp-seance-card p{font-size:.84rem;color:var(--text-light);line-height:1.6;margin-bottom:16px}
+    .smp-seance-card .btn{font-size:.82rem;padding:9px 18px}
+    .smp-competence-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .smp-competence-card{padding:36px 28px;border-radius:var(--radius-md);background:var(--card);border:1px solid var(--card-border);transition:var(--transition)}
+    .smp-competence-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(77,163,255,.2)}
+    .smp-competence-card i{font-size:1.8rem;color:var(--accent);margin-bottom:16px;display:block}
+    .smp-competence-card h4{font-size:1.05rem;font-weight:700;margin-bottom:14px}
+    .smp-competence-card ul{list-style:none;padding:0}
+    .smp-competence-card li{font-size:.9rem;color:var(--text-light);line-height:1.7;padding:5px 0;display:flex;align-items:center;gap:10px}
+    .smp-competence-card li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+    @media(max-width:768px){
+      .smp-axes-timeline::before{left:24px}
+      .smp-axe-icon{width:50px;height:50px;font-size:1.1rem}
+      .smp-competence-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <span class="brand-icon">●</span>
+        <span class="brand-text">Ouijdane<span class="dot">.</span>Portfolio</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="mainNav" role="navigation" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="profile.html" class="nav-link">Profil</a>
+        <div class="drop">
+          <span class="dropbtn nav-link">Formation <i class="fa-solid fa-chevron-down"></i></span>
+          <div class="dropdown">
+            <a href="semester1/index.html" class="dropdown-link">Semestre 1</a>
+            <a href="semester2/index.html" class="dropdown-link">Semestre 2</a>
+          </div>
+        </div>
+        <a href="smp.html" class="nav-link active">SMP</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button id="themeToggle" class="btn-theme" type="button" aria-label="Changer le thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 1. HERO SMP ===== -->
+    <section class="module-hero">
+      <div class="container" data-aos="fade-up">
+        <span class="badge"><i class="fa-solid fa-chalkboard-user"></i> Stage en Milieu Professionnel</span>
+        <h1>Stage en Milieu Professionnel</h1>
+        <p style="font-weight:600;color:var(--secondary);margin-bottom:8px">Collège Al Nakhil — Immersion dans la réalité du métier d'enseignante</p>
+        <p>Le stage en milieu professionnel représente une étape essentielle dans ma formation au CRMEF. Il m'a permis de découvrir progressivement la réalité du métier d'enseignante, depuis l'observation de l'environnement scolaire jusqu'à la participation aux activités pédagogiques et à l'analyse des pratiques en classe.</p>
+        <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+          <a href="#etablissement" class="btn btn-primary">Découvrir l'établissement</a>
+          <a href="#seances" class="btn btn-outline">Voir les séances</a>
+          <a href="#seances" class="btn btn-outline">Consulter les rapports</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. PRÉSENTATION GÉNÉRALE DU STAGE ===== -->
+    <section class="section-block" style="padding-top:0">
+      <div class="container">
+        <div class="bento-grid bento-grid-2" data-aos="fade-up">
+          <div class="glass-card">
+            <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:16px">Présentation du stage</h2>
+            <p style="color:var(--text-light);line-height:1.8">
+              Dans le cadre de ma formation au Centre Régional des Métiers de l'Éducation et de la Formation Ibn Rochd Marrakech-Safi, j'ai effectué mon stage au sein de l'Établissement collégial Al Nakhil. Ce stage m'a permis de confronter les acquis théoriques de la formation aux réalités du terrain scolaire, d'observer les pratiques professionnelles de l'enseignant et de développer progressivement mes compétences pédagogiques, didactiques et relationnelles.
+            </p>
+          </div>
+          <div class="glass-card">
+            <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:16px">Informations du stage</h2>
+            <div class="smp-info-grid" style="margin-top:0">
+              <div class="smp-info-cell"><strong>Établissement</strong>Établissement collégial Al Nakhil</div>
+              <div class="smp-info-cell"><strong>Cycle</strong>Secondaire collégial</div>
+              <div class="smp-info-cell"><strong>Discipline</strong>Informatique</div>
+              <div class="smp-info-cell"><strong>Centre de formation</strong>CRMEF Ibn Rochd Marrakech-Safi</div>
+              <div class="smp-info-cell"><strong>Professeur encadrant</strong>M. Khalid Chouabi</div>
+              <div class="smp-info-cell"><strong>Année de formation</strong>2025-2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. PRÉSENTATION DE L'ÉTABLISSEMENT ===== -->
+    <section id="etablissement" class="section-block section-alt">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="section-label">Établissement</span>
+          <h2 class="section-title">Présentation de l'établissement</h2>
+          <p class="section-desc">Établissement collégial Al Nakhil</p>
+        </div>
+        <div class="smp-info-grid" style="margin-top:32px" data-aos="fade-up">
+          <div class="smp-info-cell"><strong>Académie régionale</strong>Marrakech-Safi</div>
+          <div class="smp-info-cell"><strong>Direction provinciale</strong>Marrakech-Safi</div>
+          <div class="smp-info-cell"><strong>Adresse</strong>Avenue Yaacoub El Mansour, Commune Guéliz</div>
+          <div class="smp-info-cell"><strong>Code GRESA</strong>02626D</div>
+          <div class="smp-info-cell"><strong>Milieu</strong>Urbain</div>
+          <div class="smp-info-cell"><strong>Année de création</strong>1935</div>
+          <div class="smp-info-cell"><strong>Nombre d'apprenants</strong>441</div>
+          <div class="smp-info-cell"><strong>Effectif moyen par classe</strong>32</div>
+        </div>
+        <!-- <div class="bento-grid bento-grid-4" style="margin-top:24px" data-aos="fade-up">
+          <div class="glass-card" style="text-align:center;padding:24px 16px">
+            <div style="font-size:2.2rem;font-weight:900;color:var(--accent)">441</div>
+            <div style="font-size:.82rem;color:var(--text-muted);font-weight:500">Apprenants</div>
+          </div>
+          <div class="glass-card" style="text-align:center;padding:24px 16px">
+            <div style="font-size:2.2rem;font-weight:900;color:var(--accent)">32</div>
+            <div style="font-size:.82rem;color:var(--text-muted);font-weight:500">Effectif moyen / classe</div>
+          </div>
+          <div class="glass-card" style="text-align:center;padding:24px 16px">
+            <div style="font-size:2.2rem;font-weight:900;color:var(--accent)">1935</div>
+            <div style="font-size:.82rem;color:var(--text-muted);font-weight:500">Année de création</div>
+          </div>
+          <div class="glass-card" style="text-align:center;padding:24px 16px">
+            <div style="font-size:2.2rem;font-weight:900;color:var(--accent)">02626D</div>
+            <div style="font-size:.82rem;color:var(--text-muted);font-weight:500">Code GRESA</div>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- ===== 4. ORGANISATION DES SÉANCES ET SYSTÈME DES GROUPES ===== -->
+    <section class="section-block">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="section-label">Organisation</span>
+          <h2 class="section-title">Organisation des séances et système des groupes</h2>
+          <p class="section-desc" style="max-width:700px;margin:12px 0 0">
+            Durant le stage, l'enseignement de l'informatique s'organise selon le principe des groupes de classe. Chaque classe est divisée en deux groupes afin de permettre une meilleure gestion de la salle informatique et de favoriser la manipulation directe des outils numériques par les apprenants.
+          </p>
+        </div>
+        <div class="smp-group-grid" data-aos="fade-up">
+          <div class="smp-group-card">
+            <i class="fa-solid fa-users"></i>
+            <h4>Classe divisée en deux groupes</h4>
+            <p>Chaque classe est scindée en deux groupes distincts pour faciliter l'apprentissage pratique.</p>
+          </div>
+          <div class="smp-group-card">
+            <i class="fa-solid fa-clock"></i>
+            <h4>Séance de 2 heures par groupe</h4>
+            <p>Chaque groupe bénéficie d'une séance de deux heures dédiée à la manipulation et à la pratique.</p>
+          </div>
+          <div class="smp-group-card">
+            <i class="fa-solid fa-rotate"></i>
+            <h4>Rotation sur quinze jours</h4>
+            <p>Les séances s'alternent toutes les deux semaines entre les deux groupes de chaque classe.</p>
+          </div>
+          <div class="smp-group-card">
+            <i class="fa-solid fa-desktop"></i>
+            <h4>Travail pratique en salle informatique</h4>
+            <p>Les activités se déroulent en salle informatique pour un apprentissage concrète et interactif.</p>
+          </div>
+          <div class="smp-group-card">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <h4>Accompagnement individualisé</h4>
+            <p>Les petits groupes permettent un suivi personnalisé de chaque apprenant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. AXES DU STAGE (Timeline) ===== -->
+    <section class="section-block section-alt">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="section-label">Déroulement</span>
+          <h2 class="section-title">Axes du stage</h2>
+          <p class="section-desc">Un parcours progressif d'immersion dans le métier d'enseignant, de l'observation à l'analyse réflexive.</p>
+        </div>
+        <div class="smp-axes-timeline" style="margin-top:40px" data-aos="fade-up">
+          <div class="smp-axe-item">
+            <div class="smp-axe-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="smp-axe-body">
+              <h4><span class="axe-num">Phase 1</span> Découverte de l'établissement</h4>
+              <p>Découverte de l'administration, des espaces, du fonctionnement général, des ressources matérielles et de l'organisation pédagogique.</p>
+            </div>
+          </div>
+          <div class="smp-axe-item">
+            <div class="smp-axe-icon"><i class="fa-solid fa-eye"></i></div>
+            <div class="smp-axe-body">
+              <h4><span class="axe-num">Phase 2</span> Observation pédagogique</h4>
+              <p>Observation des séances assurées par le professeur encadrant, analyse de la gestion de classe, des méthodes utilisées, des supports et des interactions avec les élèves.</p>
+            </div>
+          </div>
+          <div class="smp-axe-item">
+            <div class="smp-axe-icon"><i class="fa-solid fa-handshake"></i></div>
+            <div class="smp-axe-body">
+              <h4><span class="axe-num">Phase 3</span> Participation et accompagnement</h4>
+              <p>Accompagnement des apprenants pendant les activités pratiques, aide individualisée, observation des difficultés et participation à la gestion de l'activité.</p>
+            </div>
+          </div>
+          <div class="smp-axe-item">
+            <div class="smp-axe-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div class="smp-axe-body">
+              <h4><span class="axe-num">Phase 4</span> Animation de séances</h4>
+              <p>Préparation et présentation de certaines parties de cours, gestion du déroulement, adaptation aux imprévus et interaction avec les apprenants.</p>
+            </div>
+          </div>
+          <div class="smp-axe-item">
+            <div class="smp-axe-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="smp-axe-body">
+              <h4><span class="axe-num">Phase 5</span> Analyse réflexive</h4>
+              <p>Analyse des pratiques observées et vécues, identification des points forts, des difficultés et des pistes d'amélioration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. SÉANCES DE STAGE ===== -->
+    <section id="seances" class="section-block">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="section-label">Rapports</span>
+          <h2 class="section-title">Séances de stage</h2>
+          <p class="section-desc">Consultez les rapports détaillés de chaque séance de stage.</p>
+        </div>
+        <div class="smp-seance-grid" data-aos="fade-up">
+          <div class="smp-seance-card">
+            <div class="smp-seance-num">1</div>
+            <div class="smp-seance-type">Observation institutionnelle</div>
+            <h4>Découverte de l'établissement</h4>
+            <p>Première immersion au Collège Al Nakhil consacrée à la découverte de l'administration, des espaces scolaires.</p>
+            <a href="smp/seance-1.html" class="btn btn-outline">Consulter le rapport <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="smp-seance-card">
+            <div class="smp-seance-num">2</div>
+            <div class="smp-seance-type">Observation pédagogique</div>
+            <h4>Fonction SI dans Excel</h4>
+            <p>Observation d'une séance animée par le professeur encadrant autour de la fonction SI.</p>
+            <a href="smp/seance-2.html" class="btn btn-outline">Consulter le rapport <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="smp-seance-card">
+            <div class="smp-seance-num">3</div>
+            <div class="smp-seance-type">Observation / participation</div>
+            <h4>Fonction SI — observation</h4>
+            <p>Observation d'une séance animée par un enseignant stagiaire sur la fonction SI dans Excel.</p>
+            <a href="smp/seance-3.html" class="btn btn-outline">Consulter le rapport <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="smp-seance-card">
+            <div class="smp-seance-num">4</div>
+            <div class="smp-seance-type">Co-animation</div>
+            <h4>Mise en forme conditionnelle et graphiques</h4>
+            <p>Séance consacrée à la mise en forme conditionnelle et à la création de graphiques dans Excel.</p>
+            <a href="smp/seance-4.html" class="btn btn-outline">Consulter le rapport <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="smp-seance-card">
+            <div class="smp-seance-num">5</div>
+            <div class="smp-seance-type">Observation pédagogique</div>
+            <h4>Réinvestissement sur Excel</h4>
+            <p>Séance portant sur la mise en forme conditionnelle et les graphiques.</p>
+            <a href="smp/seance-5.html" class="btn btn-outline">Consulter le rapport <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="smp-seance-card">
+            <div class="smp-seance-num">6</div>
+            <div class="smp-seance-type">Observation pédagogique</div>
+            <h4>Scratch 3 et programmation par blocs</h4>
+            <p>Séance animée par le professeur encadrant autour de Scratch 3.</p>
+            <a href="smp/seance-6.html" class="btn btn-outline">Consulter le rapport <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="smp-seance-card">
+            <div class="smp-seance-num">7</div>
+            <div class="smp-seance-type">Co-animation</div>
+            <h4>Scratch — activité pratique guidée</h4>
+            <p>Séance de réinvestissement autour de Scratch pour construire des scripts simples.</p>
+            <a href="smp/seance-7.html" class="btn btn-outline">Consulter le rapport <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="smp-seance-card">
+            <div class="smp-seance-num">8</div>
+            <div class="smp-seance-type">Observation pédagogique</div>
+            <h4>Extension Stylo dans Scratch</h4>
+            <p>Séance consacrée à l'utilisation de l'extension Stylo afin de tracer des formes géométriques.</p>
+            <a href="smp/seance-8.html" class="btn btn-outline">Consulter le rapport <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. COMPÉTENCES DÉVELOPPÉES ===== -->
+    <section class="section-block section-alt">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="section-label">Compétences</span>
+          <h2 class="section-title">Compétences développées pendant le stage</h2>
+        </div>
+        <div class="smp-competence-grid" style="margin-top:32px" data-aos="fade-up">
+          <div class="smp-competence-card">
+            <i class="fa-solid fa-chalkboard"></i>
+            <h4>Compétences pédagogiques</h4>
+            <ul>
+              <li>Préparer une séance</li>
+              <li>Formuler des objectifs</li>
+              <li>Organiser les activités</li>
+              <li>Accompagner les apprenants</li>
+            </ul>
+          </div>
+          <div class="smp-competence-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h4>Compétences didactiques</h4>
+            <ul>
+              <li>Adapter le contenu informatique au niveau des élèves</li>
+              <li>Choisir des situations d'apprentissage</li>
+              <li>Utiliser des supports numériques</li>
+              <li>Identifier les obstacles d'apprentissage</li>
+            </ul>
+          </div>
+          <div class="smp-competence-card">
+            <i class="fa-solid fa-comments"></i>
+            <h4>Compétences relationnelles</h4>
+            <ul>
+              <li>Communiquer avec les élèves</li>
+              <li>Gérer les interactions</li>
+              <li>Encourager la participation</li>
+              <li>Maintenir un climat positif</li>
+            </ul>
+          </div>
+          <div class="smp-competence-card">
+            <i class="fa-solid fa-brain"></i>
+            <h4>Compétences réflexives</h4>
+            <ul>
+              <li>Observer une pratique</li>
+              <li>Analyser une séance</li>
+              <li>Identifier les points d'amélioration</li>
+              <li>Ajuster sa posture professionnelle</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. CONCLUSION GÉNÉRALE ===== -->
+    <section class="section-block section-alt">
+      <div class="container">
+        <div data-aos="fade-up" style="max-width:800px;text-align:center;margin:0 auto">
+          <span class="section-label">Conclusion</span>
+          <h2 class="section-title" style="text-align:center">Conclusion générale</h2>
+        </div>
+        <div class="glass-card" style="margin-top:32px;max-width:800px;margin-left:auto;margin-right:auto;border-left:4px solid var(--accent)" data-aos="fade-up">
+          <p style="color:var(--text-light);line-height:1.8;font-size:.95rem">
+            Le stage au Collège Al Nakhil a constitué une expérience formatrice dans la construction de mon identité professionnelle. Il m'a permis de découvrir le fonctionnement réel d'un établissement scolaire, d'observer les pratiques pédagogiques en informatique et de comprendre l'importance de la préparation, de la communication, de la gestion de classe et de l'adaptation aux besoins des apprenants. Cette immersion m'a aidée à passer progressivement d'une posture d'observatrice à une posture d'enseignante stagiaire capable d'analyser, de participer et de réfléchir à ses propres pratiques.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-icon">●</span>
+          <h3>Ouijdane<span class="dot">.</span>Portfolio</h3>
+          <p>Enseignante Stagiaire en Informatique<br>CRMEF Ibn Rochd Marrakech-Safi</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="index.html">Accueil</a>
+          <a href="profile.html">Profil</a>
+          <a href="formation.html">Formation</a>
+          <a href="smp.html">SMP</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-modules">
+          <h4>Formation</h4>
+          <a href="semester1/index.html">Semestre 1</a>
+          <a href="semester2/index.html">Semestre 2</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <a href="mailto:louchachhaouijdane@gmail.com"><i class="fa-solid fa-envelope"></i> louchachhaouijdane@gmail.com</a>
+          <a href="tel:+212641031153"><i class="fa-solid fa-phone"></i> +212 641031153</a>
+          <a href="https://ouijdane.net" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> ouijdane.net</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ouijdane Louchachha — Portfolio Professionnel CRMEF</p>
+        <p class="footer-tagline">Former les citoyens numériques de demain</p>
+      </div>
+    </div>
+  </footer>
+  <div class="backtop" id="backTop" aria-label="Retour en haut">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
